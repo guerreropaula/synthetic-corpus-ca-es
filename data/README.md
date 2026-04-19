@@ -1,4 +1,4 @@
-# data/
+# Data 
 
 This directory holds all input and output data produced throughout the entire corpus building and analysis process, organized by stage.
 

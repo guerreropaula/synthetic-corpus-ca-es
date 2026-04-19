@@ -1,4 +1,4 @@
-# scripts/
+# Scripts
 
 This directory contains the six Python scripts that constitute the corpus-building and analysis pipeline. Scripts are numbered and must be executed in order, as each stage depends on the output of the previous one.
 
