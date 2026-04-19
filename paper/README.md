@@ -1,4 +1,4 @@
-# Paper ***Building a Synthetic Parallel Catalan–Spanish Corpus of Literary Texts***
+# Paper
 
 **Paula Guerrero Castelló**  
 
