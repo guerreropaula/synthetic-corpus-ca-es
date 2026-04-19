@@ -2,7 +2,7 @@
 
 This directory contains the six Python scripts that constitute the corpus-building and analysis pipeline. Scripts are numbered and must be executed in order, as each stage depends on the output of the previous one.
 
-## Scripts
+## Description
 
 ### 01_load_texts.py
 Iterates over all `.txt` files in `data/corpus_ctilc/`, parses their XML-like structure, extracts document metadata and paragraph-segmented text, and writes the outputs to `data/raw/`.
