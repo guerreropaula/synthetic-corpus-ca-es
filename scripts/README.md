@@ -106,7 +106,7 @@ Filters `data/raw/metadata.csv` to retain only the documents present in `corpus/
 ---
 
 ## Execution Order
-
+The commands below must be executed in order with the specified arguments to reproduce the obtained corpus.
 ```bash
 python 01_load_texts.py
 python 02_translate_ca_es.py
