@@ -8,7 +8,6 @@ Reads:
 
 Produces:
     data/analysis/general/run_<stamp>/corpus_stats.txt     — structured plain-text summary statistics
-    data/analysis/general/run_<stamp>/corpus_stats.csv     — single tab-delimited table for downstream analysis
     data/analysis/general/run_<stamp>/figures/             — individual PNG charts 
 
 Usage:
@@ -99,12 +98,10 @@ def summarize_dominant_category(data: dict[str, int], total: int, fallback: str 
 
 
 def count_words_in_file(path: Path) -> int:
-    """Return whitespace-delimited token count for a single file."""
     return len(path.read_text(encoding="utf-8", errors="ignore").split())
 
 
 def count_ca_words(records: list[dict]) -> int:
-    """Count words across all Catalan source files in data/raw/."""
     total = 0
     for r in records:
         doc_id = r.get("doc_id")
@@ -117,7 +114,6 @@ def count_ca_words(records: list[dict]) -> int:
 
 
 def count_es_words(records: list[dict]) -> int:
-    """Count words across all Spanish translated files in data/processed/."""
     total = 0
     for r in records:
         doc_id = r.get("doc_id")
@@ -130,16 +126,6 @@ def count_es_words(records: list[dict]) -> int:
 
 
 def analyze_aligned_corpus(corpus_path: Path) -> dict:
-    """
-    Analyzes the aligned parallel corpus (corpus_ca_es.csv).
-    
-    Returns a dict with:
-      - aligned_pairs: total number of aligned paragraph pairs
-      - ca_tokens: total tokens in Catalan text_ca column
-      - ca_words: total words in Catalan (same as tokens)
-      - es_tokens: total tokens in Spanish text_es column
-      - es_words: total words in Spanish (same as tokens)
-    """
     if not corpus_path.exists():
         return {
             "aligned_pairs": 0,
@@ -159,13 +145,9 @@ def analyze_aligned_corpus(corpus_path: Path) -> dict:
             reader = csv.DictReader(f)
             for row in reader:
                 aligned_pairs += 1
-                
-                # Count tokens in Catalan text
                 ca_text = row.get("text_ca", "").strip()
                 if ca_text:
                     ca_tokens += len(ca_text.split())
-                
-                # Count tokens in Spanish text
                 es_text = row.get("text_es", "").strip()
                 if es_text:
                     es_tokens += len(es_text.split())
@@ -183,9 +165,9 @@ def analyze_aligned_corpus(corpus_path: Path) -> dict:
     return {
         "aligned_pairs": aligned_pairs,
         "ca_tokens": ca_tokens,
-        "ca_words": ca_tokens,  
+        "ca_words": ca_tokens,
         "es_tokens": es_tokens,
-        "es_words": es_tokens,  
+        "es_words": es_tokens,
         "found": True,
     }
 
@@ -197,39 +179,31 @@ def decade(year: int) -> str:
 def compute_stats(records: list[dict]) -> dict:
     total = len(records)
 
-    # Year / decade
     years = [safe_int(r["year"]) for r in records if safe_int(r["year"]) > 0]
     decades = Counter(decade(y) for y in years)
     year_range = (min(years), max(years)) if years else (None, None)
 
-    # Language / variety
     langs = Counter(r["lang"].strip().upper() or "UNKNOWN" for r in records)
 
-    # Traducció (translation flag)
     traduccio_counts = Counter()
     for r in records:
         traduccio_counts[normalize_translation_flag(r.get("traduccio", ""))] += 1
 
-    # Variant
     variants = Counter(r.get("variant", "").strip() or "unspecified" for r in records)
 
-    # Paragraph counts
     n_paras = [safe_int(r["n_paragraphs"]) for r in records]
     total_paras = sum(n_paras)
     avg_paras    = total_paras / total if total else 0
     median_paras = median(n_paras) if n_paras else 0
 
-    # Word counts
     print("Counting Catalan words (data/raw/)...")
     ca_words = count_ca_words(records)
     print("Counting Spanish words (data/processed/)...")
     es_words = count_es_words(records)
 
-    # Authors
     authors = Counter(r["author"].strip() for r in records if r.get("author"))
     top_authors = authors.most_common(15)
 
-    # Documents per decade + avg paragraphs per decade
     paras_by_decade: dict[str, list[int]] = defaultdict(list)
     for r in records:
         y = safe_int(r["year"])
@@ -240,7 +214,6 @@ def compute_stats(records: list[dict]) -> dict:
         d: round(sum(v) / len(v), 1) for d, v in paras_by_decade.items() if v
     }
 
-    # Analyze aligned corpus
     aligned_corpus_path = CORPUS_DIR / "corpus_ca_es.csv"
     print("Analyzing aligned corpus (corpus_ca_es.csv)...")
     aligned_stats = analyze_aligned_corpus(aligned_corpus_path)
@@ -256,18 +229,14 @@ def compute_stats(records: list[dict]) -> dict:
         "total_paragraphs": total_paras,
         "ca_words": ca_words,
         "es_words": es_words,
-        # Paragraph stats
         "avg_paragraphs": round(avg_paras, 1),
         "median_paragraphs": median_paras,
         "top_authors": top_authors,
         "avg_paras_by_decade": avg_paras_by_decade,
         "paras_by_decade": {d: sum(v) for d, v in paras_by_decade.items()},
-        # Aligned corpus stats
         "aligned_corpus": aligned_stats,
     }
 
-
-# Plain-text report
 
 def text_section(title: str) -> list[str]:
     line = "=" * 78
@@ -365,7 +334,6 @@ def write_text_report(stats: dict, out_path: Path, args: argparse.Namespace) -> 
     ))
     lines.append("")
 
-    # Aligned corpus statistics
     if stats["aligned_corpus"]["found"]:
         lines.extend(text_section("Parallel Corpus Statistics"))
         lines.extend([
@@ -408,96 +376,6 @@ def write_text_report(stats: dict, out_path: Path, args: argparse.Namespace) -> 
     print(report)
 
 
-def write_csv_report(stats: dict, out_path: Path, args: argparse.Namespace) -> None:
-    y0, y1 = stats["year_range"]
-    year_range = f"{y0}-{y1}" if y0 and y1 else "n/a"
-    generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    rows: list[dict[str, str | int | float]] = []
-
-    def add_row(
-        section: str,
-        item: str,
-        value: str | int | float,
-        share: str = "",
-        rank: str | int = "",
-        detail: str = "",
-    ) -> None:
-        rows.append({
-            "section": section,
-            "item": item,
-            "value": value,
-            "share": share,
-            "rank": rank,
-            "detail": detail,
-        })
-
-    config_rows = [
-        ("generated_on", generated_at),
-        ("csv_source", str(args.csv)),
-        ("only_processed", str(args.only_processed)),
-        ("year_filter", format_config_value(args.year)),
-        ("variant_filter", format_config_value(args.variant)),
-        ("output_directory", str(out_path.parent)),
-    ]
-    for item, value in config_rows:
-        add_row("run_configuration", item, value)
-
-    metric_rows = [
-        ("total_documents", format_stat(stats["total"])),
-        ("total_paragraphs", format_stat(stats["total_paragraphs"])),
-        ("average_paragraphs_per_document", format_stat(stats["avg_paragraphs"])),
-        ("median_paragraphs_per_document", format_stat(stats["median_paragraphs"])),
-        ("year_range", year_range),
-        ("unique_language_labels", format_stat(len(stats["langs"]))),
-        ("unique_variants", format_stat(len(stats["variants"]))),
-    ]
-    for item, value in metric_rows:
-        add_row("core_metrics", item, value)
-
-    word_count_rows = [
-        ("ca_words", stats["ca_words"], "Catalan originals (data/raw/)"),
-        ("es_words", stats["es_words"], "Spanish translations (data/processed/)"),
-    ]
-    for item, value, detail in word_count_rows:
-        add_row("word_counts", item, value, detail=detail)
-
-    # Add aligned corpus data to CSV if available
-    if stats["aligned_corpus"]["found"]:
-        add_row("parallel_corpus", "aligned_pairs", stats["aligned_corpus"]["aligned_pairs"], detail="corpus_ca_es.csv")
-        add_row("parallel_corpus", "ca_tokens", stats["aligned_corpus"]["ca_tokens"], detail="Catalan tokens")
-        add_row("parallel_corpus", "ca_words", stats["aligned_corpus"]["ca_words"], detail="Catalan words")
-        add_row("parallel_corpus", "es_tokens", stats["aligned_corpus"]["es_tokens"], detail="Spanish tokens")
-        add_row("parallel_corpus", "es_words", stats["aligned_corpus"]["es_words"], detail="Spanish words")
-
-    grouped_sections = [
-        ("documents_by_decade", stats["decades"]),
-        ("language_labels", stats["langs"]),
-        ("translation_status", stats["traduccio"]),
-        ("textual_variants", stats["variants"]),
-    ]
-    for section, data in grouped_sections:
-        for label, count in data.items():
-            add_row(section, label, count, share=format_share(count, stats["total"]))
-
-    for decade_label, avg in sorted(stats["avg_paras_by_decade"].items()):
-        add_row("average_paragraphs_by_decade", decade_label, avg)
-
-    for index, (author, count) in enumerate(stats["top_authors"], start=1):
-        add_row("top_authors", author, count, share=format_share(count, stats["total"]), rank=index)
-
-    with open(out_path, "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(
-            f,
-            fieldnames=["section", "item", "value", "share", "rank", "detail"],
-            delimiter="\t",
-        )
-        writer.writeheader()
-        writer.writerows(rows)
-
-
-# Matplotlib PNG figures
-
 def write_matplotlib_figures(stats: dict, fig_dir: Path) -> None:
     try:
         import matplotlib
@@ -539,7 +417,6 @@ def write_matplotlib_figures(stats: dict, fig_dir: Path) -> None:
         print(f"  PNG → {fig_dir / filename}")
 
     def save_grouped_bar(data: dict[str, int], filename: str, title: str) -> None:
-        """Side-by-side bar for CA vs ES word counts."""
         labels = list(data.keys())
         values = list(data.values())
         fig, ax = plt.subplots(figsize=(7, 5))
@@ -572,8 +449,6 @@ def write_matplotlib_figures(stats: dict, fig_dir: Path) -> None:
     )
 
 
-# CLI
-
 def parse_args():
     parser = argparse.ArgumentParser(description="Analyze corpus metadata distribution.")
     parser.add_argument("--csv",     type=Path, default=RAW_DIR / "metadata.csv",
@@ -587,7 +462,6 @@ def parse_args():
         action="store_true",
         help="Skip plain-text summary report.",
     )
-    parser.add_argument("--no-csv", action="store_true", help="Skip tab-delimited CSV summary export.")
     parser.add_argument("--year", type=int, default=None)
     parser.add_argument("--variant", type=str, default=None)
     return parser.parse_args()
@@ -633,11 +507,6 @@ def main():
         txt_path = args.out_dir / "corpus_stats.txt"
         write_text_report(stats, txt_path, args)
         print(f"\nText summary saved → {txt_path}")
-
-    if not args.no_csv:
-        csv_path = args.out_dir / "corpus_stats.csv"
-        write_csv_report(stats, csv_path, args)
-        print(f"Tabular summary saved → {csv_path}")
 
     if not args.no_png:
         write_matplotlib_figures(stats, args.out_dir / "figures")
