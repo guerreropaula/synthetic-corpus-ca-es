@@ -46,6 +46,7 @@ See `scripts/README.md` for usage instructions and `data/README.md` for a full d
 │   ├── processed/        # Spanish translations generated
 │   └── analysis/         # Reports, CSVs, and resulting figures
 ├── corpus/               # Final aligned corpus (CSV)
+├── paper/                # Paper describing the methodology and results 
 └── README.md
 ```
 
