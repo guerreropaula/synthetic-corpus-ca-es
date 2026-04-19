@@ -58,7 +58,6 @@ python -m venv env
 source env/bin/activate
 ```
 
-Install dependencies:
 ```bash
 # PyTorch with CUDA 12.1
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
