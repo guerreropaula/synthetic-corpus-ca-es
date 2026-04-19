@@ -1,5 +1,11 @@
 # Building a Synthetic Parallel Catalan–Spanish Corpus of Literary Texts
 
+**Author:** Paula Guerrero Castelló
+
+
+[![Paper](https://img.shields.io/badge/Paper-PDF-red)](paper/paper.pdf)
+[![Synthetic Corpus](https://img.shields.io/badge/%20Demo-Qwen--FT--merged-blue)](https://huggingface.co/spaces/pguerrero-igutierrez/qwen-text-simplifier)
+
 This repository contains the code and methodology for creating, processing, and analyzing a synthetic parallel bilingual corpus (ca-es). The corpus comprises 63 literary documents (totaling ∼1,6 million words) published between 1905 and 1948, translated using an LLM (Gemma-27B-IT).
 
 The corpus is intended as a data augmentation resource for training or fine-tuning MT systems.
