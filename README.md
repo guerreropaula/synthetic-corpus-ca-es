@@ -45,6 +45,19 @@ See `scripts/README.md` for usage instructions and `data/README.md` for a full d
 
 ## Installation & Usage
 
+### 1. Clone the repository
+
+```
+git clone git@github.com:guerreropaula/synthetic-corpus-ca-es.git
+cd synthetic-corpus-ca-es
+```
+### 2. Install dependencies
+
+```
+python -m venv env
+source env/bin/activate
+```
+
 Install dependencies:
 ```bash
 # PyTorch with CUDA 12.1
