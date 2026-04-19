@@ -24,7 +24,9 @@ Reads each Catalan document from `data/raw/` and translates it paragraph by para
 ---
 
 ### 03_build_corpus.py
-Reads source texts from `data/raw/` and translations from `data/processed/`, removes MT prompt-artefact lines (matching the pattern `[Texto literario...]`), aligns documents at the paragraph level, and writes the final corpus.
+Reads source texts from `data/raw/` and translations from `data/processed/`, removes MT prompt-artefact lines (matching the pattern `[Texto literario...]`, `[Literary...]`), aligns documents at the paragraph level, and writes the final corpus.
+
+Paragraph counts between source and translation are compared after splitting on blank lines. If they differ, semantic alignment is performed using `intfloat/multilingual-e5-large` via a DP alignment algorithm (vecalign-style) that allows many-to-one merging with a configurable gap penalty.
 
 **Flags:**
 - `--dry-run` — preview which lines would be removed without modifying files.
@@ -32,16 +34,21 @@ Reads source texts from `data/raw/` and translations from `data/processed/`, rem
 
 **Output:**
 - `corpus/corpus_ca_es.csv` — paragraph-level aligned corpus; one row per paragraph pair.
-- `corpus/corpus_ca_es_fulltext.csv` — document-level full texts; one row per document.
+- `corpus/corpus_ca_es_fulltext.jsonl` — document-level full texts; one JSON object per line.
 
-
-**CSV Fields (Paragraph-level):**
+**Fields (paragraph-level CSV):**
 - `doc_id`, `para_id` — Document and paragraph identifiers
 - `offset_ca`, `offset_es` — Character positions in original/translated text
 - `n_paragraphs_ca`, `n_paragraphs_es` — Total paragraph counts
 - `aligned_paragraphs` — Number of aligned pairs
-- `is_truncated` — True if CA and ES paragraph counts differ
+- `is_truncated` — True if CA and ES paragraph counts differ (e5 alignment was used)
 - `text_ca`, `text_es` — Actual paragraph texts
+- (Plus all metadata fields from `metadata.csv`)
+
+**Fields (fulltext JSONL):**
+- `doc_id` — Document identifier
+- `text_ca` — Full Catalan source text (paragraphs joined with `\n\n`)
+- `text_es` — Full Spanish translation (paragraphs joined with `\n\n`)
 - (Plus all metadata fields from `metadata.csv`)
 
 ---
