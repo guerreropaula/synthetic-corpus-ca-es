@@ -1,6 +1,6 @@
 # Building a Synthetic Parallel Catalan–Spanish Corpus of Literary Texts
 
-**Paula Guerrero Castelló**  
+Author: **Paula Guerrero Castelló**  
 
 
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)](paper/paper.pdf)
