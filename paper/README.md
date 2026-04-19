@@ -1,11 +1,11 @@
 # Paper
-
+---
 **Paula Guerrero Castelló**  
 
----
 This respository contains the paper *“Building a Synthetic Parallel Catalan–Spanish Corpus of Literary Texts”*.
 
 ## Abstract
+
 
 This paper describes the design and implementation of a parallel corpus of early
 twentieth-century Catalan literary texts and their automatic Spanish translations. Starting
@@ -21,7 +21,8 @@ and 1948 and spans five dialectal variants of Catalan. The comparative analysis 
 systematic lexical divergences between the source language and its translations, offering a
 quantitative window onto the linguistic distance between Catalan and Spanish as well as the
 translation behavior of a large language model on literary prose.
----
+
+
 
 ## Keywords
 
