@@ -33,20 +33,15 @@ Paragraph-level aligned corpus. Each row represents one aligned paragraph pair.
 | `offset_ca` | Character offset of the paragraph in the source `.txt` file |
 | `offset_es` | Character offset of the paragraph in the translation `.txt` file |
 
-**Size:** 30,289 aligned paragraph pairs across 63 documents.
-
 ---
 
-### corpus_ca_es_fulltext.csv
-Document-level corpus. Each row contains the complete text of one document in both languages.
-
+### corpus_ca_es_fulltext.jsonl
+Document-level corpus. Each line is a JSON object containing the complete text of one document in both languages.
 | Column | Description |
 |---|---|
 | `doc_id` | Document identifier |
 | `text_ca` | Full Catalan source text (paragraphs joined) |
 | `text_es` | Full Spanish translation (paragraphs joined) |
-
-**Size:** 63 documents; 1,577,899 Catalan words; 1,669,795 Spanish words.
 
 ---
 
