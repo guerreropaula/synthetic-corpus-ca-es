@@ -1,31 +1,31 @@
 CORPUS ANALYSIS SUMMARY
-Generated on: 2026-04-18 17:32:47
+Generated on: 2026-04-19 21:26:37
 
 ==============================================================================
 EXECUTIVE SUMMARY
 ==============================================================================
 - The filtered corpus contains 63 documents spanning 1905-1948.
 - Catalan source texts total 1,577,899 words.
-- Spanish translations total 1,669,795 words.
+- Spanish translations total 1,669,666 words.
 - Total paragraphs: 30,031.
 - The most represented decade is 1910s (24, 38.1%).
 - The dominant textual variant is central (56, 88.9%).
 - The translation profile is led by Original (54, 85.7%).
 
-- Parallel Corpus (corpus_ca_es.csv): 30,289 aligned pairs.
+- Parallel Corpus (corpus_ca_es.csv): 30,290 aligned pairs.
   • Catalan: 1,582,915 tokens
-  • Spanish: 1,650,442 tokens
+  • Spanish: 1,674,696 tokens
 
 ==============================================================================
 RUN CONFIGURATION
 ==============================================================================
-Parameter        | Value                                                                                  
------------------+----------------------------------------------------------------------------------------
-CSV source       | /home/pguerrero005/corpus-linguistics-project/data/raw/metadata.csv                    
-Only processed   | True                                                                                   
-Year filter      | 1905                                                                                   
-Variant filter   | n/a                                                                                    
-Output directory | /home/pguerrero005/corpus-linguistics-project/data/analysis/general/run_20260418_173246
+Parameter        | Value                                                                                     
+-----------------+-------------------------------------------------------------------------------------------
+CSV source       | /home/pguerrero005/corpus/synthetic-corpus-ca-es/data/raw/metadata.csv                    
+Only processed   | True                                                                                      
+Year filter      | 1905                                                                                      
+Variant filter   | n/a                                                                                       
+Output directory | /home/pguerrero005/corpus/synthetic-corpus-ca-es/data/analysis/general/run_20260419_212637
 
 ==============================================================================
 CORE METRICS
@@ -46,17 +46,17 @@ WORD COUNTS
 Source                                 | Words    
 ---------------------------------------+----------
 Catalan originals  (data/raw/)         | 1,577,899
-Spanish translations (data/processed/) | 1,669,795
+Spanish translations (data/processed/) | 1,669,666
 
 ==============================================================================
 PARALLEL CORPUS STATISTICS
 ==============================================================================
-- Aligned pairs (corpus_ca_es.csv): 30,289
+- Aligned pairs (corpus_ca_es.csv): 30,290
 
 Language | Tokens    | Words    
 ---------+-----------+----------
 Catalan  | 1,582,915 | 1,582,915
-Spanish  | 1,650,442 | 1,650,442
+Spanish  | 1,674,696 | 1,674,696
 
 ==============================================================================
 DISTRIBUTION BY DECADE

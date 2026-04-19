@@ -1,0 +1,117 @@
+CORPUS RUN INFO
+
+date: 2026-04-19 21:25:28.478243
+lang: es
+compare: True
+year: 1905
+variety: None
+top_n: 50
+min_freq: 5
+
+
+============================================================
+  Keywords: Log-Odds Ratio
+============================================================
+  >> Distinctive of Catalan (positive log-odds)
+  havia                            8.9192
+  fer                              8.8110
+  dir                              8.5636
+  aquell                           8.4410
+  aquesta                          8.3094
+  tota                             8.2273
+  senyor                           8.1859
+  mateix                           8.1462
+  fet                              8.1267
+  veure                            8.1231
+  després                          8.0951
+  sempre                           8.0883
+  ulls                             8.0675
+  ésser                            8.0267
+  vaig                             8.0214
+  los                              7.9703
+  mai                              7.9046
+  anar                             7.8781
+  cor                              7.8627
+  home                             7.8517
+  feia                             7.8415
+  pot                              7.8343
+  tenia                            7.7993
+  diu                              7.7604
+  anys                             7.7561
+  món                              7.6665
+  bon                              7.6618
+  haver                            7.6474
+  doncs                            7.6338
+  nit                              7.6289
+  eren                             7.6279
+  havía                            7.6190
+  mort                             7.5723
+  damunt                           7.5460
+  sols                             7.5417
+  fill                             7.5352
+  aquells                          7.5287
+  anava                            7.5277
+  estat                            7.5233
+  ben                              7.5106
+  seves                            7.5090
+  havien                           7.5023
+  són                              7.4808
+  fills                            7.4649
+  dit                              7.4579
+  terra                            7.4442
+  dins                             7.4283
+  estava                           7.4175
+  dues                             7.4003
+  sembla                           7.3917
+
+  >> Distinctive of Spanish (negative log-odds)
+  señor                           -8.3379
+  esta                            -8.1879
+  hacia                           -7.9481
+  dijo                            -7.8343
+  años                            -7.7076
+  madre                           -7.6749
+  incluso                         -7.6515
+  hijo                            -7.5821
+  hacía                           -7.5729
+  aquellos                        -7.5647
+  hijos                           -7.4887
+  pequeño                         -7.4605
+  manos                           -7.4432
+  esas                            -7.4016
+  apenas                          -7.3857
+  cielo                           -7.3556
+  habría                          -7.2846
+  señora                          -7.2832
+  frente                          -7.2750
+  rostro                          -7.2213
+  embargo                         -7.1992
+  después                         -7.1805
+  demasiado                       -7.1752
+  cuenta                          -7.1706
+  hablar                          -7.1506
+  mañana                          -7.0994
+  hubiera                         -7.0828
+  cualquier                       -7.0626
+  cierto                          -7.0592
+  espíritu                        -7.0541
+  pequeña                         -7.0506
+  junto                           -7.0489
+  habían                          -7.0313
+  buena                           -7.0262
+  cuerpo                          -6.9774
+  alguien                         -6.9300
+  niño                            -6.9202
+  parecía                         -6.9030
+  salir                           -6.8984
+  brazos                          -6.8964
+  habitación                      -6.8554
+  instante                        -6.8427
+  dado                            -6.8278
+  ningún                          -6.8170
+  atención                        -6.8126
+  pequeños                        -6.8082
+  respondió                       -6.7634
+  lado                            -6.7430
+  pie                             -6.7188
+  cataluña                        -6.7018

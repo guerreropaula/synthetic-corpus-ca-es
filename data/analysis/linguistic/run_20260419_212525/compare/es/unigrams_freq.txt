@@ -1,6 +1,6 @@
 CORPUS RUN INFO
 
-date: 2026-04-18 17:33:10.287553
+date: 2026-04-19 21:25:28.478420
 lang: es
 compare: True
 year: 1905
