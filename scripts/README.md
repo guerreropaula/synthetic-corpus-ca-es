@@ -59,8 +59,7 @@ Computes descriptive corpus statistics from `data/raw/metadata.csv` and the alig
 
 **Output:** `data/analysis/general/run_*/`
 - `corpus_stats.txt` — plain-text summary report.
-- `corpus_stats.csv` — tabular statistics.
-- PNG figures for visual inspection.
+- PNG figures for visual comparison.
 
 **Main flags:** `--only-processed`, `--year <YYYY>`, `--variant <variant_name>`.
 
@@ -77,7 +76,7 @@ Performs corpus-linguistic analysis. Supports three modes: single-language Catal
 
 **Output:** `data/analysis/linguistic/run_*/`
 - `ca/` and `es/` subdirectories with per-language files: `unigrams_freq.txt`, `bigrams_freq.txt`, `ngrams_by_decade.txt`, `ngrams_by_variant.txt`, `lexical_stats.txt`, `keywords_log_odds.txt`.
-- `compare/comparative_summary.txt` and `compare/comparative_analysis.csv` (comparative mode only).
+- `compare/comparative_summary.txt` (comparative mode only).
 
 
 **Usage:**
