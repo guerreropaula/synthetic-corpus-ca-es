@@ -41,7 +41,7 @@ Document-level corpus. Each line is a JSON object containing the complete text o
 ---
 
 ### metadata_filtered.csv
-Filtered version of the metadata, restricted to the 63 documents present in the final aligned corpus. Produced by `06_filter_metadata.py`. This file serves as the definitive registry of documents included in the corpus.
+Filtered version of the metadata, restricted to the 63 documents present in the final aligned corpus. Produced by `03_build_corpus.py`. This file serves as the definitive registry of documents included in the corpus.
 
 Columns are identical to `data/raw/metadata.csv`:
 

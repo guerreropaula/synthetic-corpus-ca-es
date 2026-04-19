@@ -44,8 +44,8 @@ See `scripts/README.md` for usage instructions and `data/README.md` for a full d
 ├── data/
 │   ├── raw/              # Original texts (CTILC) and metadata
 │   ├── processed/        # Spanish translations generated
-│   └── analysis/         # Reports, CSVs, and resulting figures
-├── corpus/               # Final aligned corpus (CSV)
+│   └── analysis/         # Reports and resulting figures
+├── corpus/               # Final corpus (both at paragraph and document-level)
 ├── paper/                # Paper describing the methodology and results 
 └── README.md
 ```

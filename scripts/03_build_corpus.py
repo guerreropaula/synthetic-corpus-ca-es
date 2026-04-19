@@ -1,21 +1,23 @@
 """
 03_build_corpus.py
 ------------------
-This script performs two main tasks:
+This script performs three main tasks:
   1. Removes prompt artifact lines from Spanish translation files
   2. Builds two aligned bilingual corpus files from:
      - Catalan originals:      data/raw/<doc_id>.txt
      - Spanish translations:   data/processed/<doc_id>_es.txt
      - Metadata:               data/raw/metadata.csv
+  3. Filters the metadata file to retain only successfully translated documents
 
 Outputs:
     corpus/corpus_ca_es.csv                — paragraph-level alignment with offsets
     corpus/corpus_ca_es_fulltext.jsonl     — document-level full text (JSONL)
+    corpus/metadata_filtered.csv          — metadata for translated documents only
 
 Usage:
-  python scripts/05_build_corpus.py              # Full run: preprocess + build
-  python scripts/05_build_corpus.py --dry-run    # Dry run: show what would be removed
-  python scripts/05_build_corpus.py --no-preprocess  # Skip preprocessing, only build
+  python scripts/03_build_corpus.py              # Full run: preprocess + build + filter
+  python scripts/03_build_corpus.py --dry-run    # Dry run: show what would be removed
+  python scripts/03_build_corpus.py --no-preprocess  # Skip preprocessing, only build
 """
 
 import csv
@@ -34,6 +36,7 @@ PROCESSED_DIR  = Path(__file__).parent.parent / "data" / "processed"
 CORPUS_DIR     = Path(__file__).parent.parent / "corpus"
 OUTPUT_PARA    = CORPUS_DIR / "corpus_ca_es.csv"
 OUTPUT_FULL    = CORPUS_DIR / "corpus_ca_es_fulltext.jsonl"
+OUTPUT_METADATA = CORPUS_DIR / "metadata_filtered.csv"
 METADATA_PATH  = RAW_DIR / "metadata.csv"
 
 MARKER_PATTERN = re.compile(
@@ -257,11 +260,26 @@ def compute_offsets(paragraphs: list[str]) -> list[int]:
     return offsets
 
 
+def filter_metadata(doc_ids: list[str], meta_fields: list[str], metadata: dict) -> None:
+    processed_ids = set(doc_ids)
+    rows = [
+        metadata[doc_id]
+        for doc_id in sorted(processed_ids)
+        if doc_id in metadata
+    ]
+    with open(OUTPUT_METADATA, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=meta_fields)
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"\nFiltered metadata -> {OUTPUT_METADATA}")
+    print(f"  Documents: {len(rows)}")
+
+
 def main():
     import argparse
 
     parser = argparse.ArgumentParser(
-        description="Preprocess Spanish translation files and build aligned bilingual corpus.",
+        description="Preprocess Spanish translation files, build aligned bilingual corpus, and filter metadata.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
@@ -369,6 +387,13 @@ def main():
     print(f"\nFulltext corpus -> {OUTPUT_FULL}")
     print(f"  Documents: {total_full_rows}")
 
+    print("\nStep 3: Filtering metadata...")
+    filter_metadata(list(aligned_docs.keys()), meta_fields, metadata)
+
 
 if __name__ == "__main__":
     main()
+    
+    
+    
+    

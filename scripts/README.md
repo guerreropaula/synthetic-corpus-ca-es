@@ -1,6 +1,6 @@
 # Scripts
 
-This directory contains the six Python scripts that constitute the corpus-building and analysis pipeline. Scripts are numbered and must be executed in order, as each stage depends on the output of the previous one.
+This directory contains the five Python scripts that constitute the corpus-building and analysis pipeline. Scripts are numbered and must be executed in order, as each stage depends on the output of the previous one.
 
 ## Description
 
@@ -25,6 +25,7 @@ Reads each Catalan document from `data/raw/` and translates it paragraph by para
 
 ### 03_build_corpus.py
 Reads source texts from `data/raw/` and translations from `data/processed/`, removes MT prompt-artefact lines (matching the pattern `[Texto literario...]`, `[Literary...]`), aligns documents at the paragraph level, and writes the final corpus.
+Filters `data/raw/metadata.csv` to retain only the documents present in `corpus/corpus_ca_es.csv`, producing a clean registry of all documents included in the final corpus (`corpus/metadata_filtered.csv`).
 
 Paragraph counts between source and translation are compared after splitting on blank lines. If they differ, semantic alignment is performed using `intfloat/multilingual-e5-large` via a DP alignment algorithm (vecalign-style).
 
@@ -103,14 +104,6 @@ python scripts/05_linguistics_analysis.py --variety central --min-freq 5
 
 ---
 
-### 06_filter_metadata.py
-Filters `data/raw/metadata.csv` to retain only the documents present in `corpus/corpus_ca_es.csv`, producing a clean registry of all documents included in the final corpus.
-
-**Output:**
-- `corpus/metadata_filtered.csv`
-
----
-
 ## Execution Order
 The commands below must be executed in order with the specified arguments to reproduce the obtained corpus.
 ```bash
@@ -119,5 +112,4 @@ python 02_translate_ca_es.py
 python 03_build_corpus.py
 python 04_analyze_corpus.py --year 1905 --only-processed
 python 05_linguistics_analysis.py --compare
-python 06_filter_metadata.py
 ```
