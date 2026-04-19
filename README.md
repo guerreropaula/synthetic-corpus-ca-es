@@ -1,7 +1,8 @@
 # Building a Synthetic Parallel Catalan–Spanish Corpus of Literary Texts
 
-**Author:** Paula Guerrero Castelló
-
+**Paula Guerrero Castelló**  
+MSc in Language Analysis and Processing  
+University of the Basque Country (UPV/EHU)
 
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)](paper/paper.pdf)
 [![Corpus](https://img.shields.io/badge/Synthetic%20Corpus-CA%2FES-blue)](corpus/corpus_ca_es.csv)
@@ -107,3 +108,6 @@ Also cite the CTILC corpus:
 For detailed documentation see [data/README.md](data/README.md), [scripts/README.md](scripts/README.md), and [corpus/README.md](corpus/README.md).
 
 > The original texts remain the property of their respective authors and are distributed under the licensing terms of the CTILC corpus. The compiled dataset and code are provided for research purposes.
+
+
+**Contact:** [pguerrero005@ikasle.ehu.eus](mailto:pguerrero005@ikasle.ehu.eus)
