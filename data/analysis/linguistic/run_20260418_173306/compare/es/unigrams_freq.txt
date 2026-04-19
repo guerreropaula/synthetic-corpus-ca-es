@@ -1,0 +1,64 @@
+CORPUS RUN INFO
+
+date: 2026-04-18 17:33:10.287553
+lang: es
+compare: True
+year: 1905
+variety: None
+top_n: 50
+min_freq: 5
+
+============================================================
+  Top 50 Unigrams by Frequency
+============================================================
+  WORD                                    FREQ
+  había                                   5070
+  tan                                     3045
+  hombre                                  2673
+  ahora                                   2593
+  pues                                    2541
+  bien                                    2426
+  casa                                    2233
+  vida                                    2146
+  solo                                    2130
+  señor                                   2101
+  allí                                    1998
+  día                                     1984
+  dos                                     1919
+  vez                                     1887
+  mientras                                1861
+  siempre                                 1839
+  cómo                                    1812
+  esta                                    1809
+  mismo                                   1735
+  dios                                    1680
+  aquel                                   1678
+  está                                    1675
+  aquí                                    1661
+  tiempo                                  1598
+  padre                                   1552
+  gran                                    1542
+  aunque                                  1530
+  aquella                                 1478
+  toda                                    1474
+  hacia                                   1424
+  estaba                                  1402
+  ojos                                    1382
+  entonces                                1381
+  fuera                                   1379
+  joven                                   1373
+  ver                                     1349
+  todas                                   1329
+  mujer                                   1328
+  después                                 1322
+  tierra                                  1308
+  dijo                                    1271
+  lugar                                   1256
+  nunca                                   1252
+  hacer                                   1178
+  corazón                                 1163
+  mundo                                   1157
+  noche                                   1147
+  tenía                                   1145
+  habían                                  1139
+  hombres                                 1131

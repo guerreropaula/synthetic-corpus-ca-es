@@ -1,0 +1,919 @@
+source_file,language,section,subgroup,rank,item,item_2,value,value_2,value_3,notes
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,1,havia,,8.9193,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,2,fer,,8.8111,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,3,dir,,8.5638,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,4,aquell,,8.4412,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,5,aquesta,,8.3095,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,6,tota,,8.2275,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,7,senyor,,8.186,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,8,mateix,,8.1464,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,9,fet,,8.1268,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,10,veure,,8.1232,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,11,després,,8.0952,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,12,sempre,,8.0884,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,13,ulls,,8.0677,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,14,ésser,,8.0269,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,15,vaig,,8.0216,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,16,los,,7.9705,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,17,mai,,7.9048,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,18,anar,,7.8783,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,19,cor,,7.8628,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,20,home,,7.8518,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,21,feia,,7.8416,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,22,pot,,7.8344,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,23,tenia,,7.7994,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,24,diu,,7.7605,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,25,anys,,7.7562,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,26,món,,7.6666,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,27,bon,,7.6619,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,28,haver,,7.6475,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,29,doncs,,7.6339,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,30,nit,,7.629,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,31,eren,,7.6281,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,32,havía,,7.6192,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,33,mort,,7.5724,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,34,damunt,,7.5461,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,35,sols,,7.5418,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,36,fill,,7.5354,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,37,aquells,,7.5289,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,38,anava,,7.5278,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,39,estat,,7.5234,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,40,ben,,7.5108,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,41,seves,,7.5091,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,42,havien,,7.5025,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,43,són,,7.481,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,44,fills,,7.465,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,45,dit,,7.458,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,46,terra,,7.4444,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,47,dins,,7.4285,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,48,estava,,7.4176,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,49,dues,,7.4005,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,positive_log_odds,50,sembla,,7.3918,,,distinctive_of=Catalan
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,1,señor,,-8.3377,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,2,esta,,-8.1877,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,3,hacia,,-7.948,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,4,dijo,,-7.8341,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,5,años,,-7.7075,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,6,madre,,-7.6748,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,7,incluso,,-7.6514,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,8,hijo,,-7.5819,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,9,hacía,,-7.5728,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,10,aquellos,,-7.5645,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,11,hijos,,-7.4885,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,12,pequeño,,-7.4603,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,13,manos,,-7.443,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,14,esas,,-7.4014,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,15,apenas,,-7.3855,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,16,cielo,,-7.3555,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,17,habría,,-7.2844,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,18,señora,,-7.2831,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,19,frente,,-7.2749,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,20,rostro,,-7.2211,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,21,embargo,,-7.1991,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,22,después,,-7.1804,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,23,demasiado,,-7.175,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,24,cuenta,,-7.1705,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,25,hablar,,-7.1504,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,26,mañana,,-7.0992,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,27,hubiera,,-7.0827,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,28,cualquier,,-7.0625,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,29,cierto,,-7.0591,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,30,espíritu,,-7.0539,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,31,pequeña,,-7.0505,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,32,junto,,-7.0488,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,33,habían,,-7.0312,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,34,buena,,-7.0261,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,35,cuerpo,,-6.9773,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,36,alguien,,-6.9298,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,37,niño,,-6.9201,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,38,parecía,,-6.9029,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,39,salir,,-6.8983,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,40,brazos,,-6.8963,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,41,habitación,,-6.8552,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,42,instante,,-6.8426,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,43,dado,,-6.8277,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,44,ningún,,-6.8168,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,45,atención,,-6.8125,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,46,pequeños,,-6.8081,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,47,respondió,,-6.7632,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,48,lado,,-6.7429,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,49,pie,,-6.7186,,,distinctive_of=Spanish
+ca/keywords_log_odds.txt,ca,keywords,negative_log_odds,50,cataluña,,-6.7017,,,distinctive_of=Spanish
+ca/unigrams_freq.txt,ca,unigrams_freq,,1,havia,,3691,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,2,cap,,3490,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,3,fer,,3314,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,4,tan,,3083,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,5,dir,,2590,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,6,home,,2542,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,7,ara,,2445,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,8,aquell,,2292,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,9,pas,,2249,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,10,casa,,2073,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,11,aquesta,,2010,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,12,aquella,,1995,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,13,vida,,1916,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,14,tota,,1852,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,15,ben,,1809,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,16,senyor,,1777,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,17,són,,1756,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,18,gran,,1714,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,19,mateix,,1708,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,20,terra,,1693,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,21,fet,,1675,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,22,veure,,1669,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,23,després,,1623,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,24,sempre,,1612,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,25,ulls,,1579,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,26,pare,,1530,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,27,temps,,1520,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,28,dia,,1517,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,29,ésser,,1516,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,30,aquí,,1509,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,31,vaig,,1508,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,32,sol,,1451,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,33,los,,1433,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,34,dos,,1402,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,35,cosa,,1395,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,36,mai,,1342,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,37,anar,,1307,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,38,cor,,1287,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,39,feia,,1260,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,40,pot,,1251,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,41,porta,,1251,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,42,totes,,1212,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,43,mare,,1208,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,44,tenia,,1208,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,45,allí,,1204,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,46,veu,,1193,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,47,deu,,1163,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,48,diu,,1162,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,49,anys,,1157,,,
+ca/unigrams_freq.txt,ca,unigrams_freq,,50,mal,,1137,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,1,maría,gloria,215,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,2,rey,rodolf,206,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,3,alguna,cosa,198,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,4,don,pere,190,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,5,havia,fet,186,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,6,jordi,dandin,186,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,7,tan,sols,171,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,8,comte,orlof,165,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,9,príncep,demetri,158,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,10,vol,dir,138,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,11,tomàs,bajalta,138,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,12,tota,mena,137,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,13,hereu,escampa,137,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,14,senyor,josep,135,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,15,havia,estat,131,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,16,fills,israel,129,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,17,don,modest,128,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,18,donya,maria,121,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,19,anna,maria,116,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,20,sant,pere,113,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,21,vet,aquí,112,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,22,pau,garcia,112,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,23,després,haver,106,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,24,tal,volta,105,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,25,aquell,home,102,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,26,tota,vida,99,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,27,tal,vegada,96,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,28,terra,egipte,94,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,29,senyor,sotenville,90,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,30,mon,senyor,88,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,31,aquestes,coses,87,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,32,pot,dir,86,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,33,senyor,pere,86,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,34,has,fet,85,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,35,aquesta,casa,82,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,36,mare,déu,82,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,37,cal,dir,82,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,38,heus,aquí,81,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,39,nostre,senyor,80,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,40,vaig,veure,79,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,41,totes,coses,79,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,42,mai,havia,78,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,43,aquell,dia,78,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,44,pot,ésser,76,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,45,primera,vegada,76,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,46,tres,quatre,74,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,47,aquella,nit,73,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,48,havia,vist,73,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,49,senyor,rector,73,,,
+ca/bigrams_freq.txt,ca,bigrams_freq,,50,senyora,paca,73,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,1,sant pere,,81,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,2,sant roch,,63,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,3,mare deu,,47,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,4,joan valent,,43,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,5,nostre senyor,,41,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,6,pare joan,,40,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,7,senyor rector,,35,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,8,bon home,,28,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,9,havia fet,,27,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,10,bon punt,,25,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,11,aquell home,,24,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,12,sant domingo,,23,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,13,aquella hora,,23,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,14,cal dir,,22,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,15,tota mena,,21,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,16,sant antoni,,21,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,17,deu anys,,20,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,18,den josafat,,20,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,19,alguna cosa,,20,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1900s,20,pot esse,,20,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,1,maría gloria,,215,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,2,rey rodolf,,206,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,3,don pere,,190,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,4,comte orlof,,165,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,5,príncep demetri,,158,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,6,senyor josep,,131,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,7,don modest,,128,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,8,tan sols,,101,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,9,donya maria,,89,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,10,senyor pere,,85,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,11,senyora paca,,73,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,12,comendatore morelli,,63,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,13,vol dir,,57,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,14,sant celoni,,52,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,15,coronel talarn,,50,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,16,aquesta casa,,44,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,17,sos ulls,,43,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,18,vaig veure,,43,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,19,alguna cosa,,43,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1910s,20,posà nom,,41,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,1,tomàs bajalta,,138,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,2,hereu escampa,,137,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,3,fills israel,,122,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,4,mon senyor,,87,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,5,alguna cosa,,83,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,6,vet aquí,,72,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,7,havia fet,,72,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,8,terra egipte,,59,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,9,senyora rosa,,56,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,10,vol dir,,50,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,11,tal volta,,47,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,12,jahvè moisès,,46,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,13,havia estat,,45,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,14,senyora remei,,45,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,15,aquestes coses,,44,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,16,tal vegada,,42,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,17,heus aquí,,42,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,18,tota mena,,41,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,19,tan sols,,40,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1920s,20,donya ramona,,40,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,1,jordi dandin,,186,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,2,senyor sotenville,,90,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,3,senyor marcel·lí,,60,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,4,hereu aspriu,,56,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,5,senyora mònica,,47,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,6,senyora sotenville,,40,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,7,tota mena,,38,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,8,alguna cosa,,37,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,9,havia fet,,33,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,10,mare déu,,32,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,11,havia estat,,30,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,12,mai havia,,30,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,13,cal pobric,,30,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,14,sant roc,,28,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,15,cal dir,,27,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,16,després haver,,26,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,17,jove aspriu,,25,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,18,innocenci havia,,23,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,19,pot ésser,,22,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1930s,20,havien fet,,22,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,1,pau garcia,,112,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,2,anna maria,,112,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,3,fra job,,40,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,4,havia estat,,39,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,5,bell nou,,27,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,6,havia fet,,25,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,7,innocenci aspriu,,20,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,8,heus aquí,,20,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,9,havia anat,,19,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,10,tota mena,,19,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,11,senyor babarotes,,18,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,12,doctor pladevall,,17,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,13,aspriu havia,,15,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,14,vet aquí,,15,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,15,havia vist,,15,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,16,alguna cosa,,15,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,17,democràcia catalana,,14,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,18,mai havia,,13,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,19,sant pau,,13,,,
+ca/ngrams_by_decade.txt,ca,ngrams_by_decade,1940s,20,després haver,,12,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,1,tal volta,,10,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,2,pera fer,,8,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,3,bon mot,,5,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,4,hora present,,5,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,5,sos ulls,,4,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,6,quatre vents,,4,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,7,amor propi,,4,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,8,cultura llenguatge,,4,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,9,pecar llengua,,4,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,10,nostre poble,,4,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,11,lliga bon,,4,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,12,pera assolir,,4,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,13,vell fons,,4,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,14,sens dubte,,3,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,15,nom déu,,3,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,16,senyores senyors,,3,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,17,sinó home,,3,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,18,nostra parla,,3,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,19,favor nostre,,3,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,baleàric,20,dos mons,,3,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,1,maría gloria,,215,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,2,rey rodolf,,206,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,3,don pere,,190,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,4,jordi dandin,,186,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,5,alguna cosa,,182,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,6,tan sols,,169,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,7,comte orlof,,165,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,8,príncep demetri,,158,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,9,havia fet,,150,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,10,tomàs bajalta,,138,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,11,hereu escampa,,137,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,12,senyor josep,,131,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,13,tota mena,,129,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,14,fills israel,,129,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,15,don modest,,128,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,16,vol dir,,127,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,17,anna maria,,116,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,18,havia estat,,112,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,19,pau garcia,,112,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,central,20,vet aquí,,109,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,1,mon senyor,,87,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,2,donya ramona,,40,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,3,senyor hàmlet,,38,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,4,donya maria,,32,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,5,primer fosser,,30,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,6,havia fet,,29,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,7,rosencrantz guildenstern,,26,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,8,senyor tusquella,,19,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,9,dues germanes,,18,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,10,mai havia,,15,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,11,rei reina,,15,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,12,vuit anys,,14,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,13,havia estat,,14,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,14,alguna cosa,,14,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,15,santa maria,,13,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,16,havia vist,,13,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,17,carme agneta,,13,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,18,bona nit,,13,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,19,aquell dia,,11,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,nord-occidental,20,bon senyor,,11,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,1,sant pere,,77,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,2,sant roch,,63,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,3,joan valent,,43,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,4,mare deu,,40,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,5,nostre senyor,,38,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,6,senyor rector,,34,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,7,pot esse,,20,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,8,cade die,,19,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,9,pas may,,19,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,10,bon home,,18,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,11,deu anys,,17,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,12,deu vos,,17,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,13,porta cel,,16,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,14,van arrivar,,15,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,15,home just,,15,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,16,camina caminaràs,,14,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,17,devant porta,,14,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,18,fer padri,,14,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,19,podeu pensar,,13,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,septentrional,20,pas cap,,13,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,1,sant roc,,28,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,2,mare déu,,22,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,3,los ulls,,15,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,4,mestre domingo,,15,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,5,seua filla,,14,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,6,cal dir,,13,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,7,los dies,,12,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,8,los braços,,10,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,9,los teuladins,,9,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,10,allí estava,,9,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,11,sant josep,,9,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,12,allà van,,8,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,13,baix figuera,,8,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,14,casa clavari,,8,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,15,tota família,,7,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,16,has dit,,7,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,17,allí està,,7,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,18,sant fèlix,,7,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,19,falta gent,,6,,,
+ca/ngrams_by_variant.txt,ca,ngrams_by_variant,valencià,20,tal volta,,6,,,
+ca/lexical_stats.txt,ca,lexical_stats,overall,,all,,833803,87335,0.1047,mattr=0.8902; hapax=40954; hapax_pct=46.9
+ca/lexical_stats.txt,ca,lexical_stats,decade,,1900s,,117476,27034,0.2301,mattr=0.8918; hapax=15692; hapax_pct=58.0
+ca/lexical_stats.txt,ca,lexical_stats,decade,,1910s,,252804,43847,0.1734,mattr=0.8752; hapax=23202; hapax_pct=52.9
+ca/lexical_stats.txt,ca,lexical_stats,decade,,1920s,,243317,37300,0.1533,mattr=0.8802; hapax=18383; hapax_pct=49.3
+ca/lexical_stats.txt,ca,lexical_stats,decade,,1930s,,152777,32255,0.2111,mattr=0.9049; hapax=17071; hapax_pct=52.9
+ca/lexical_stats.txt,ca,lexical_stats,decade,,1940s,,67429,19179,0.2844,mattr=0.9474; hapax=10657; hapax_pct=55.6
+ca/lexical_stats.txt,ca,lexical_stats,variant,,baleàric,,14356,6726,0.4685,mattr=0.9231; hapax=4600; hapax_pct=68.4
+ca/lexical_stats.txt,ca,lexical_stats,variant,,central,,724131,79486,0.1098,mattr=0.8901; hapax=37074; hapax_pct=46.6
+ca/lexical_stats.txt,ca,lexical_stats,variant,,nord-occidental,,39160,9560,0.2441,mattr=0.8851; hapax=5440; hapax_pct=56.9
+ca/lexical_stats.txt,ca,lexical_stats,variant,,septentrional,,25514,5774,0.2263,mattr=0.8524; hapax=3238; hapax_pct=56.1
+ca/lexical_stats.txt,ca,lexical_stats,variant,,valencià,,30642,9971,0.3254,mattr=0.9095; hapax=5870; hapax_pct=58.9
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,1,havia,,8.9193,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,2,fer,,8.8111,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,3,dir,,8.5638,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,4,aquell,,8.4412,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,5,aquesta,,8.3095,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,6,tota,,8.2275,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,7,senyor,,8.186,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,8,mateix,,8.1464,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,9,fet,,8.1268,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,10,veure,,8.1232,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,11,després,,8.0952,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,12,sempre,,8.0884,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,13,ulls,,8.0677,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,14,ésser,,8.0269,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,15,vaig,,8.0216,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,16,los,,7.9705,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,17,mai,,7.9048,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,18,anar,,7.8783,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,19,cor,,7.8628,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,20,home,,7.8518,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,21,feia,,7.8416,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,22,pot,,7.8344,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,23,tenia,,7.7994,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,24,diu,,7.7605,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,25,anys,,7.7562,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,26,món,,7.6666,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,27,bon,,7.6619,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,28,haver,,7.6475,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,29,doncs,,7.6339,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,30,nit,,7.629,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,31,eren,,7.6281,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,32,havía,,7.6192,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,33,mort,,7.5724,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,34,damunt,,7.5461,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,35,sols,,7.5418,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,36,fill,,7.5354,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,37,aquells,,7.5289,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,38,anava,,7.5278,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,39,estat,,7.5234,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,40,ben,,7.5108,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,41,seves,,7.5091,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,42,havien,,7.5025,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,43,són,,7.481,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,44,fills,,7.465,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,45,dit,,7.458,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,46,terra,,7.4444,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,47,dins,,7.4285,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,48,estava,,7.4176,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,49,dues,,7.4005,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,positive_log_odds,50,sembla,,7.3918,,,distinctive_of=Catalan
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,1,señor,,-8.3377,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,2,esta,,-8.1877,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,3,hacia,,-7.948,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,4,dijo,,-7.8341,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,5,años,,-7.7075,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,6,madre,,-7.6748,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,7,incluso,,-7.6514,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,8,hijo,,-7.5819,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,9,hacía,,-7.5728,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,10,aquellos,,-7.5645,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,11,hijos,,-7.4885,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,12,pequeño,,-7.4603,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,13,manos,,-7.443,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,14,esas,,-7.4014,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,15,apenas,,-7.3855,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,16,cielo,,-7.3555,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,17,habría,,-7.2844,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,18,señora,,-7.2831,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,19,frente,,-7.2749,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,20,rostro,,-7.2211,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,21,embargo,,-7.1991,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,22,después,,-7.1804,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,23,demasiado,,-7.175,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,24,cuenta,,-7.1705,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,25,hablar,,-7.1504,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,26,mañana,,-7.0992,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,27,hubiera,,-7.0827,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,28,cualquier,,-7.0625,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,29,cierto,,-7.0591,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,30,espíritu,,-7.0539,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,31,pequeña,,-7.0505,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,32,junto,,-7.0488,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,33,habían,,-7.0312,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,34,buena,,-7.0261,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,35,cuerpo,,-6.9773,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,36,alguien,,-6.9298,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,37,niño,,-6.9201,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,38,parecía,,-6.9029,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,39,salir,,-6.8983,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,40,brazos,,-6.8963,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,41,habitación,,-6.8552,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,42,instante,,-6.8426,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,43,dado,,-6.8277,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,44,ningún,,-6.8168,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,45,atención,,-6.8125,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,46,pequeños,,-6.8081,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,47,respondió,,-6.7632,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,48,lado,,-6.7429,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,49,pie,,-6.7186,,,distinctive_of=Spanish
+es/keywords_log_odds.txt,es,keywords,negative_log_odds,50,cataluña,,-6.7017,,,distinctive_of=Spanish
+es/unigrams_freq.txt,es,unigrams_freq,,1,había,,5070,,,
+es/unigrams_freq.txt,es,unigrams_freq,,2,tan,,3045,,,
+es/unigrams_freq.txt,es,unigrams_freq,,3,hombre,,2673,,,
+es/unigrams_freq.txt,es,unigrams_freq,,4,ahora,,2593,,,
+es/unigrams_freq.txt,es,unigrams_freq,,5,pues,,2541,,,
+es/unigrams_freq.txt,es,unigrams_freq,,6,bien,,2426,,,
+es/unigrams_freq.txt,es,unigrams_freq,,7,casa,,2233,,,
+es/unigrams_freq.txt,es,unigrams_freq,,8,vida,,2146,,,
+es/unigrams_freq.txt,es,unigrams_freq,,9,solo,,2130,,,
+es/unigrams_freq.txt,es,unigrams_freq,,10,señor,,2101,,,
+es/unigrams_freq.txt,es,unigrams_freq,,11,allí,,1998,,,
+es/unigrams_freq.txt,es,unigrams_freq,,12,día,,1984,,,
+es/unigrams_freq.txt,es,unigrams_freq,,13,dos,,1919,,,
+es/unigrams_freq.txt,es,unigrams_freq,,14,vez,,1887,,,
+es/unigrams_freq.txt,es,unigrams_freq,,15,mientras,,1861,,,
+es/unigrams_freq.txt,es,unigrams_freq,,16,siempre,,1839,,,
+es/unigrams_freq.txt,es,unigrams_freq,,17,cómo,,1812,,,
+es/unigrams_freq.txt,es,unigrams_freq,,18,esta,,1809,,,
+es/unigrams_freq.txt,es,unigrams_freq,,19,mismo,,1735,,,
+es/unigrams_freq.txt,es,unigrams_freq,,20,dios,,1680,,,
+es/unigrams_freq.txt,es,unigrams_freq,,21,aquel,,1678,,,
+es/unigrams_freq.txt,es,unigrams_freq,,22,está,,1675,,,
+es/unigrams_freq.txt,es,unigrams_freq,,23,aquí,,1661,,,
+es/unigrams_freq.txt,es,unigrams_freq,,24,tiempo,,1598,,,
+es/unigrams_freq.txt,es,unigrams_freq,,25,padre,,1552,,,
+es/unigrams_freq.txt,es,unigrams_freq,,26,gran,,1542,,,
+es/unigrams_freq.txt,es,unigrams_freq,,27,aunque,,1530,,,
+es/unigrams_freq.txt,es,unigrams_freq,,28,aquella,,1478,,,
+es/unigrams_freq.txt,es,unigrams_freq,,29,toda,,1474,,,
+es/unigrams_freq.txt,es,unigrams_freq,,30,hacia,,1424,,,
+es/unigrams_freq.txt,es,unigrams_freq,,31,estaba,,1402,,,
+es/unigrams_freq.txt,es,unigrams_freq,,32,ojos,,1382,,,
+es/unigrams_freq.txt,es,unigrams_freq,,33,entonces,,1381,,,
+es/unigrams_freq.txt,es,unigrams_freq,,34,fuera,,1379,,,
+es/unigrams_freq.txt,es,unigrams_freq,,35,joven,,1373,,,
+es/unigrams_freq.txt,es,unigrams_freq,,36,ver,,1349,,,
+es/unigrams_freq.txt,es,unigrams_freq,,37,todas,,1329,,,
+es/unigrams_freq.txt,es,unigrams_freq,,38,mujer,,1328,,,
+es/unigrams_freq.txt,es,unigrams_freq,,39,después,,1322,,,
+es/unigrams_freq.txt,es,unigrams_freq,,40,tierra,,1308,,,
+es/unigrams_freq.txt,es,unigrams_freq,,41,dijo,,1271,,,
+es/unigrams_freq.txt,es,unigrams_freq,,42,lugar,,1256,,,
+es/unigrams_freq.txt,es,unigrams_freq,,43,nunca,,1252,,,
+es/unigrams_freq.txt,es,unigrams_freq,,44,hacer,,1178,,,
+es/unigrams_freq.txt,es,unigrams_freq,,45,corazón,,1163,,,
+es/unigrams_freq.txt,es,unigrams_freq,,46,mundo,,1157,,,
+es/unigrams_freq.txt,es,unigrams_freq,,47,noche,,1147,,,
+es/unigrams_freq.txt,es,unigrams_freq,,48,tenía,,1145,,,
+es/unigrams_freq.txt,es,unigrams_freq,,49,habían,,1139,,,
+es/unigrams_freq.txt,es,unigrams_freq,,50,hombres,,1131,,,
+es/bigrams_freq.txt,es,bigrams_freq,,1,mismo,tiempo,235,,,
+es/bigrams_freq.txt,es,bigrams_freq,,2,quién,sabe,220,,,
+es/bigrams_freq.txt,es,bigrams_freq,,3,maría,gloria,215,,,
+es/bigrams_freq.txt,es,bigrams_freq,,4,todas,partes,208,,,
+es/bigrams_freq.txt,es,bigrams_freq,,5,rey,rodolfo,204,,,
+es/bigrams_freq.txt,es,bigrams_freq,,6,día,siguiente,192,,,
+es/bigrams_freq.txt,es,bigrams_freq,,7,don,pedro,187,,,
+es/bigrams_freq.txt,es,bigrams_freq,,8,había,sido,183,,,
+es/bigrams_freq.txt,es,bigrams_freq,,9,jordi,dandin,183,,,
+es/bigrams_freq.txt,es,bigrams_freq,,10,nunca,había,167,,,
+es/bigrams_freq.txt,es,bigrams_freq,,11,voz,baja,164,,,
+es/bigrams_freq.txt,es,bigrams_freq,,12,conde,orlof,163,,,
+es/bigrams_freq.txt,es,bigrams_freq,,13,aquel,hombre,152,,,
+es/bigrams_freq.txt,es,bigrams_freq,,14,había,visto,137,,,
+es/bigrams_freq.txt,es,bigrams_freq,,15,tal,vez,133,,,
+es/bigrams_freq.txt,es,bigrams_freq,,16,había,hecho,132,,,
+es/bigrams_freq.txt,es,bigrams_freq,,17,darse,cuenta,130,,,
+es/bigrams_freq.txt,es,bigrams_freq,,18,doña,maría,127,,,
+es/bigrams_freq.txt,es,bigrams_freq,,19,tomás,bajalta,122,,,
+es/bigrams_freq.txt,es,bigrams_freq,,20,señor,josep,116,,,
+es/bigrams_freq.txt,es,bigrams_freq,,21,don,modesto,116,,,
+es/bigrams_freq.txt,es,bigrams_freq,,22,primera,vez,113,,,
+es/bigrams_freq.txt,es,bigrams_freq,,23,hijos,israel,111,,,
+es/bigrams_freq.txt,es,bigrams_freq,,24,príncipe,demetrio,111,,,
+es/bigrams_freq.txt,es,bigrams_freq,,25,anna,maria,102,,,
+es/bigrams_freq.txt,es,bigrams_freq,,26,estaba,punto,99,,,
+es/bigrams_freq.txt,es,bigrams_freq,,27,tan,bien,98,,,
+es/bigrams_freq.txt,es,bigrams_freq,,28,heredero,escampa,97,,,
+es/bigrams_freq.txt,es,bigrams_freq,,29,esta,casa,93,,,
+es/bigrams_freq.txt,es,bigrams_freq,,30,san,pedro,91,,,
+es/bigrams_freq.txt,es,bigrams_freq,,31,tierra,egipto,91,,,
+es/bigrams_freq.txt,es,bigrams_freq,,32,había,dado,90,,,
+es/bigrams_freq.txt,es,bigrams_freq,,33,había,tenido,90,,,
+es/bigrams_freq.txt,es,bigrams_freq,,34,señor,sotenville,90,,,
+es/bigrams_freq.txt,es,bigrams_freq,,35,toda,vida,88,,,
+es/bigrams_freq.txt,es,bigrams_freq,,36,dos,tres,86,,,
+es/bigrams_freq.txt,es,bigrams_freq,,37,había,ido,82,,,
+es/bigrams_freq.txt,es,bigrams_freq,,38,pues,bien,80,,,
+es/bigrams_freq.txt,es,bigrams_freq,,39,ahora,mismo,79,,,
+es/bigrams_freq.txt,es,bigrams_freq,,40,ver,cómo,76,,,
+es/bigrams_freq.txt,es,bigrams_freq,,41,había,dejado,76,,,
+es/bigrams_freq.txt,es,bigrams_freq,,42,san,roque,76,,,
+es/bigrams_freq.txt,es,bigrams_freq,,43,alguna,vez,75,,,
+es/bigrams_freq.txt,es,bigrams_freq,,44,hoy,día,75,,,
+es/bigrams_freq.txt,es,bigrams_freq,,45,misma,manera,74,,,
+es/bigrams_freq.txt,es,bigrams_freq,,46,dio,cuenta,74,,,
+es/bigrams_freq.txt,es,bigrams_freq,,47,está,bien,73,,,
+es/bigrams_freq.txt,es,bigrams_freq,,48,había,estado,73,,,
+es/bigrams_freq.txt,es,bigrams_freq,,49,aquella,noche,73,,,
+es/bigrams_freq.txt,es,bigrams_freq,,50,toda,tierra,73,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,1,san pedro,,76,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,2,san roque,,53,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,3,todas partes,,42,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,4,quién sabe,,37,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,5,día siguiente,,34,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,6,nuestro señor,,32,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,7,mismo tiempo,,31,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,8,padre juan,,31,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,9,buen hombre,,28,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,10,voz baja,,27,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,11,señor rector,,27,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,12,aquel hombre,,26,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,13,había sido,,25,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,14,joan valent,,24,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,15,diez años,,22,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,16,había visto,,22,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,17,había hecho,,22,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,18,aquellos tiempos,,18,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,19,sergi alexis,,18,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1900s,20,mejor dicho,,17,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,1,maría gloria,,215,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,2,rey rodolfo,,204,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,3,don pedro,,185,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,4,conde orlof,,163,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,5,don modesto,,116,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,6,señor josep,,114,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,7,príncipe demetrio,,111,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,8,doña maría,,95,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,9,voz baja,,78,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,10,mismo tiempo,,75,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,11,señora paca,,72,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,12,señor pere,,67,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,13,quién sabe,,66,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,14,todas partes,,58,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,15,día siguiente,,54,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,16,aquel hombre,,50,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,17,coronel talarn,,50,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,18,sant celoni,,49,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,19,comendatore morelli,,49,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1910s,20,príncipe demetri,,47,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,1,tomás bajalta,,122,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,2,hijos israel,,105,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,3,heredero escampa,,97,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,4,todas partes,,69,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,5,quién sabe,,64,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,6,nunca había,,64,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,7,día siguiente,,60,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,8,mismo tiempo,,57,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,9,tierra egipto,,57,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,10,señora rosa,,56,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,11,tal vez,,55,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,12,había sido,,47,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,13,darse cuenta,,43,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,14,había hecho,,42,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,15,doña ramona,,41,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,16,señor hamlet,,38,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,17,sant pol,,37,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,18,señora remei,,37,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,19,toda vida,,36,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1920s,20,nuestro filántropo,,36,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,1,jordi dandin,,183,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,2,señor sotenville,,90,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,3,señora mónica,,53,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,4,heredero aspriu,,50,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,5,nunca había,,43,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,6,mismo tiempo,,41,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,7,quién sabe,,40,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,8,señora sotenville,,40,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,9,señor marcel,,34,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,10,todas partes,,31,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,11,aquel hombre,,31,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,12,había sido,,31,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,13,señor marcelino,,30,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,14,darse cuenta,,29,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,15,había hecho,,27,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,16,señor pons,,27,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,17,primera vez,,25,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,18,casa campo,,25,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,19,dos tres,,25,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1930s,20,casa aspriu,,24,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,1,anna maria,,98,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,2,pau garcía,,69,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,3,pau garcia,,44,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,4,había sido,,39,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,5,fra job,,37,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,6,mismo tiempo,,31,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,7,día siguiente,,23,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,8,aspriu sentía,,19,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,9,señor babarotes,,19,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,10,había visto,,18,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,11,había ido,,16,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,12,aquel hombre,,16,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,13,anna maría,,16,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,14,innocenci aspriu,,15,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,15,darse cuenta,,15,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,16,nunca había,,15,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,17,doctor pladevall,,15,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,18,aspriu había,,14,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,19,quién sabe,,13,,,
+es/ngrams_by_decade.txt,es,ngrams_by_decade,1940s,20,democracia catalana,,13,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,1,tal vez,,5,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,2,mejor dicho,,5,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,3,nuestra lengua,,5,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,4,amor propio,,4,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,5,pecar lengua,,4,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,6,buen mot,,4,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,7,espíritu humano,,4,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,8,esos espíritus,,4,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,9,quién duda,,4,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,10,segundo nacimiento,,3,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,11,pan agua,,3,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,12,tantas veces,,3,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,13,nombre dios,,3,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,14,alguna vez,,3,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,15,largo camino,,3,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,16,nuestro favor,,3,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,17,opinión pública,,3,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,18,liga buen,,3,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,19,lenguaje obsceno,,3,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,baleàric,20,dos mundos,,3,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,1,mismo tiempo,,217,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,2,maría gloria,,215,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,3,rey rodolfo,,204,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,4,todas partes,,187,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,5,don pedro,,185,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,6,jordi dandin,,183,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,7,día siguiente,,166,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,8,conde orlof,,163,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,9,había sido,,160,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,10,quién sabe,,159,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,11,voz baja,,143,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,12,nunca había,,129,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,13,aquel hombre,,127,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,14,tomás bajalta,,122,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,15,don modesto,,116,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,16,señor josep,,114,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,17,había visto,,113,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,18,hijos israel,,111,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,19,príncipe demetrio,,111,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,central,20,tal vez,,109,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,1,doña ramona,,41,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,2,señor hamlet,,38,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,3,doña maría,,31,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,4,nunca había,,30,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,5,rosencrantz guildenstern,,23,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,6,quién sabe,,22,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,7,señor tusquella,,18,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,8,dos hermanas,,17,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,9,había hecho,,16,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,10,tal vez,,16,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,11,día siguiente,,14,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,12,había visto,,14,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,13,santa maría,,13,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,14,buenas noches,,13,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,15,rey reina,,13,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,16,buen señor,,13,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,17,aquella noche,,12,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,18,ocho años,,11,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,19,darse cuenta,,11,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,nord-occidental,20,hamlet pues,,11,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,1,san pedro,,74,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,2,san roque,,53,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,3,nuestro señor,,26,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,4,señor rector,,26,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,5,joan valent,,24,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,6,quién sabe,,23,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,7,buen hombre,,21,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,8,diez años,,17,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,9,virgen maría,,14,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,10,agua bendita,,12,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,11,delante puerta,,12,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,12,dueño casa,,12,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,13,calle francia,,12,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,14,pobres almas,,11,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,15,juan valentín,,11,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,16,joven pastora,,10,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,17,día siguiente,,9,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,18,todas partes,,9,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,19,había visto,,9,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,septentrional,20,aquella casa,,9,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,1,san roque,,22,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,2,quién sabe,,16,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,3,niño jesús,,16,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,4,maestro domingo,,15,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,5,señor batiste,,15,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,6,aquel hombre,,14,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,7,vamos vamos,,10,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,8,allí estaba,,10,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,9,toda familia,,9,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,10,tras haber,,9,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,11,san josé,,9,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,12,pobre hombre,,9,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,13,san miguel,,8,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,14,virgen lledó,,7,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,15,sabe cómo,,7,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,16,darse cuenta,,7,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,17,fin cabo,,7,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,18,puerta casa,,7,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,19,hace falta,,7,,,
+es/ngrams_by_variant.txt,es,ngrams_by_variant,valencià,20,falta decir,,7,,,
+es/lexical_stats.txt,es,lexical_stats,overall,,all,,840573,58174,0.0692,mattr=0.9034; hapax=22330; hapax_pct=38.4
+es/lexical_stats.txt,es,lexical_stats,decade,,1900s,,114833,21538,0.1876,mattr=0.9096; hapax=10785; hapax_pct=50.1
+es/lexical_stats.txt,es,lexical_stats,decade,,1910s,,253064,32974,0.1303,mattr=0.8876; hapax=14704; hapax_pct=44.6
+es/lexical_stats.txt,es,lexical_stats,decade,,1920s,,250853,32525,0.1297,mattr=0.8978; hapax=14562; hapax_pct=44.8
+es/lexical_stats.txt,es,lexical_stats,decade,,1930s,,154476,27029,0.175,mattr=0.9147; hapax=13052; hapax_pct=48.3
+es/lexical_stats.txt,es,lexical_stats,decade,,1940s,,67347,16984,0.2522,mattr=0.9451; hapax=8883; hapax_pct=52.3
+es/lexical_stats.txt,es,lexical_stats,variant,,baleàric,,13527,6253,0.4623,mattr=0.9247; hapax=4175; hapax_pct=66.8
+es/lexical_stats.txt,es,lexical_stats,variant,,central,,729974,54954,0.0753,mattr=0.9029; hapax=21353; hapax_pct=38.9
+es/lexical_stats.txt,es,lexical_stats,variant,,nord-occidental,,40457,10320,0.2551,mattr=0.9011; hapax=5766; hapax_pct=55.9
+es/lexical_stats.txt,es,lexical_stats,variant,,septentrional,,24343,6753,0.2774,mattr=0.8931; hapax=3871; hapax_pct=57.3
+es/lexical_stats.txt,es,lexical_stats,variant,,valencià,,32272,9880,0.3061,mattr=0.9201; hapax=5587; hapax_pct=56.5
+comparative_summary.txt,compare,run_configuration,,,documents_analysed,,63,,,
+comparative_summary.txt,compare,run_configuration,,,year_filter,,1905,,,
+comparative_summary.txt,compare,run_configuration,,,variety_filter,,,,,
+comparative_summary.txt,compare,run_configuration,,,top_n,,50,,,
+comparative_summary.txt,compare,run_configuration,,,min_freq,,5,,,
+comparative_summary.txt,compare,corpus_overview,,,ca_total_tokens,,833803,,,
+comparative_summary.txt,compare,corpus_overview,,,es_total_tokens,,840573,,,
+comparative_summary.txt,compare,corpus_overview,,,es_ca_token_ratio,,1.0081,,,
+comparative_summary.txt,compare,vocabulary_overlap,,,shared_types,,13166,,,
+comparative_summary.txt,compare,vocabulary_overlap,,,overlap_ca,,0.1508,,,
+comparative_summary.txt,compare,vocabulary_overlap,,,overlap_es,,0.2263,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,1,abad,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,2,abadal,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,3,abadesses,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,4,abajo,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,5,abandona,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,6,abandonada,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,7,abandonar,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,8,abandonaran,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,9,abandonarla,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,10,abandonarnos,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,11,abandonaría,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,12,abandonen,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,13,abandones,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,14,abandono,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,15,abanell,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,16,abarca,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,17,abarcar,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,18,abat,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,19,abd,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,20,abdel,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,21,abdomen,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,22,abel,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,23,abiasaf,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,24,abimael,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,25,abimelec,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,26,abismal,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,27,abiú,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,28,abnegada,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,29,abominable,,,,,
+comparative_summary.txt,compare,vocabulary_overlap_sample,,30,abominables,,,,,
+comparative_summary.txt,compare,lexical_divergence_by_decade,,,1900s,,0.2301,0.1876,-0.0425,ca_mattr=0.8918; es_mattr=0.9096; ca_hapax_pct=58.0; es_hapax_pct=50.1
+comparative_summary.txt,compare,lexical_divergence_by_decade,,,1910s,,0.1734,0.1303,-0.0431,ca_mattr=0.8752; es_mattr=0.8876; ca_hapax_pct=52.9; es_hapax_pct=44.6
+comparative_summary.txt,compare,lexical_divergence_by_decade,,,1920s,,0.1533,0.1297,-0.0236,ca_mattr=0.8802; es_mattr=0.8978; ca_hapax_pct=49.3; es_hapax_pct=44.8
+comparative_summary.txt,compare,lexical_divergence_by_decade,,,1930s,,0.2111,0.175,-0.0361,ca_mattr=0.9049; es_mattr=0.9147; ca_hapax_pct=52.9; es_hapax_pct=48.3
+comparative_summary.txt,compare,lexical_divergence_by_decade,,,1940s,,0.2844,0.2522,-0.0322,ca_mattr=0.9474; es_mattr=0.9451; ca_hapax_pct=55.6; es_hapax_pct=52.3
+comparative_summary.txt,compare,length_ratio_top_docs,1929,1,doc_002660,Sàtires,15260,17735,1.1622,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1920,2,doc_002604,Selvatana amor,5897,6727,1.1407,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1922,3,doc_002601,La gesta dels estels,2505,2801,1.1182,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1915,4,doc_002873,El senyor Josep falta a la dòna,4392,4902,1.1161,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1935,5,doc_000378,De la meua garbera,40048,44371,1.1079,variant=valencià
+comparative_summary.txt,compare,length_ratio_top_docs,1908,6,doc_003259,Involució,11001,12126,1.1023,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1927,7,doc_000154,Màximes i mals pensaments,2810,3075,1.0943,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1906,8,doc_003087,El país del Pler,3105,3395,1.0934,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1905,9,doc_003309,Andrónica,10459,11418,1.0917,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1922,10,doc_000098,L'illa de la calma,36437,39556,1.0856,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1923,11,doc_000113,El meu amic Pellini,24172,26175,1.0829,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1918,12,doc_000151,El Càntic dels Càntics de Salomó,1919,2077,1.0823,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1911,13,doc_003181,Somni de primavera,3628,3909,1.0775,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1910,14,doc_003131,L'abella perduda,1983,2136,1.0772,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1912,15,doc_003150,El tresor,11381,12241,1.0756,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1918,16,doc_002702,Al llapis y a la ploma,31873,34269,1.0752,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1906,17,doc_003004,Josafat,12788,13747,1.075,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1932,18,doc_000146,L'ós benemèrit i altres bèsties,14711,15807,1.0745,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1916,19,doc_000110,Rurals y urbanes,31532,33798,1.0719,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1912,20,doc_003379,Elogis,12264,13145,1.0718,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1911,21,doc_003154,Els ídols,4127,4421,1.0712,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1916,22,doc_000160,Cultura de llenguatge,4204,4503,1.0711,variant=baleàric
+comparative_summary.txt,compare,length_ratio_top_docs,1910,23,doc_003364,Primera conferencia,5491,5820,1.0599,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1905,24,doc_003078,Narracions estranyes,19025,20155,1.0594,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1917,25,doc_000137,La taverna intel·lectual,4007,4221,1.0534,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1917,26,doc_000093,En Josepet de Sant Celoni,34613,36408,1.0519,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1920,27,doc_002955,Hàmlet,21976,23104,1.0513,variant=nord-occidental
+comparative_summary.txt,compare,length_ratio_top_docs,1933,28,doc_000153,"Pina, la italiana del dancing",12281,12805,1.0427,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1917,29,doc_002449,El poema espars,1872,1949,1.0411,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1925,30,doc_000223,Les coses benignes,16715,17366,1.0389,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1917,31,doc_002740,Jesús que torna,18420,19137,1.0389,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1927,32,doc_002835,De plaer no n'hi ha mai prou,8723,9061,1.0387,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1911,33,doc_003161,Els zin-calós,4075,4219,1.0353,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1923,34,doc_000133,A l'ombra de Santa Maria del Mar,31758,32864,1.0348,variant=nord-occidental
+comparative_summary.txt,compare,length_ratio_top_docs,1928,35,doc_000184,Les dites i facècies de l'estrenu filàntrop en Tomàs de Baja,49375,51080,1.0345,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1930,36,doc_002947,El fantasma de Montcorb,14172,14589,1.0294,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1921,37,doc_000120,Croquis pirenencs,24856,25565,1.0285,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1936,38,doc_002937,El botxí de si mateix,9281,9543,1.0282,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1927,39,doc_000145,Jardins de Sant Pol,18187,18689,1.0276,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1907,40,doc_003109,Contes vallespirenchs,33049,33944,1.0271,variant=septentrional
+comparative_summary.txt,compare,length_ratio_top_docs,1940,41,doc_002887,La Rambla,9398,9649,1.0267,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1925,42,doc_000141,L'Èxode,19738,20208,1.0238,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1920,43,doc_000158,L'idil·li d'en Temme,17712,18062,1.0198,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1919,44,doc_000128,Les gràcies de l'Empordà,6725,6853,1.019,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1908,45,doc_003297,Les albes de la vida,11365,11575,1.0185,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1919,46,doc_000134,La parada,34650,35180,1.0153,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1934,47,doc_002920,L'home i les armes,15868,16106,1.015,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1948,48,doc_000387,L'impenitent,80628,81647,1.0126,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1908,49,doc_003029,Sota Montjuic,32886,33061,1.0053,variant=central
+comparative_summary.txt,compare,length_ratio_top_docs,1932,50,doc_002852,"Jordi Dandin, o el marit confús",7876,7917,1.0052,variant=central
