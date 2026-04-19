@@ -41,7 +41,7 @@ Output of `01_load_texts.py`. Contains one plain-text file per processed documen
 | `autor` | Author name |
 | `titol` | Title |
 | `any` | Year of publication |
-| `llengua` | Textual domain code (all documents in this project: `LIT`) |
+| `llengua` | Textual domain code (literary in this project) |
 | `traduccio` | `1` if the text is a translation into Catalan; `0` if an original |
 | `variant` | Dialectal variant (`central`, `valencià`, `nord-occidental`, `baleàric`, `septentrional`) |
 | `n_paragraphs` | Number of paragraphs after filtering |

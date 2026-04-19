@@ -1,6 +1,6 @@
 # Corpus Overview
 
-This directory contains the final parallel (ca-es) literary corpus and its associated metadata, which are the main contributions of our work.
+This directory contains the final parallel (ca-es) literary corpus and its associated metadata, which constitute the main contribution of this work.
 It comprises **63 literary texts** (1,577,899 Catalan words; 1,669,795 Spanish words; 30,289 aligned paragraph pairs) within five dialectal variants of Catalan. The target translations have been performed using Google's TranslateGemma-27B IT.
 
 
@@ -10,8 +10,8 @@ It comprises **63 literary texts** (1,577,899 Catalan words; 1,669,795 Spanish w
 |---|---|
 | Documents | 63 |
 | Publication range | 1905-1948 |
-| Catalan tokens (raw) | 1,577,899 |
-| Spanish tokens (raw) | 1,669,795 |
+| Catalan words | 1,577,899 |
+| Spanish wors | 1,669,795 |
 | Aligned paragraph pairs | 30,289 |
 | Mean paragraphs per document | 476.7 (median: 395) |
 | Dialectal variants | central (56), baleàric (3), nord-occidental (2), valencià (1), septentrional (1) |
@@ -68,8 +68,3 @@ Columns are identical to `data/raw/metadata.csv`:
 | `n_paragraphs` | Paragraph count |
 
 
----
-
-## Notes on Corpus Quality
-
-All Spanish files were preprocessed by `03_build_corpus.py` to remove prompt-artefact lines introduced during translation (lines matching `[Texto literario...]`). The `--dry-run` flag on that script can be used to verify that no such lines remain. The `offset_ca` and `offset_es` columns in `corpus_ca_es.csv` allow traceability back to the original source and translation files in `data/raw/` and `data/processed/` respectively.

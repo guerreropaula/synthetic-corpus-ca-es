@@ -1,16 +1,16 @@
 # Building a Synthetic Parallel Catalan–Spanish Corpus of Literary Texts
 
-This repository contains the code and methodology for creating, processing, and analyzing a synthetic parallel bilingual corpus (ca-es). The corpus comprises 63 literary documents (totaling ∼1,6 million words) published between 1905 and 1948, automatically translated using Gemma-27B-IT.
+This repository contains the code and methodology for creating, processing, and analyzing a synthetic parallel bilingual corpus (ca-es). The corpus comprises 63 literary documents (totaling ∼1,6 million words) published between 1905 and 1948, translated using an LLM (Gemma-27B-IT).
 
-The corpus is intended as a back-translation resource for training or fine-tuning MT systems.
+The corpus is intended as a data augmentation resource for training or fine-tuning MT systems.
 
 ## Corpus Summary
 
 | Property | Value |
 |---|---|
 | Documents | 63 |
-| Catalan tokens | 1,577,899 |
-| Spanish tokens | 1,669,795 |
+| Catalan words | 1,577,899 |
+| Spanish words | 1,669,795 |
 | Aligned paragraph pairs | 30,289 |
 | Publication range | 1905-1948 |
 | Dialectal variants | 5 (central, valencià, nord-occidental, baleàric, septentrional) |
@@ -100,4 +100,4 @@ Also cite the CTILC corpus:
 
 For detailed documentation see [data/README.md](data/README.md), [scripts/README.md](scripts/README.md), and [corpus/README.md](corpus/README.md).
 
-> Please note that the original texts belong to their respective authors and are distributed according to the licensing conditions of the source corpus. The compiled dataset and code in this repository are provided for research purposes.
+> The original texts remain the property of their respective authors and are distributed under the licensing terms of the CTILC corpus. The compiled dataset and code are provided for research purposes.
