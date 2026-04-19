@@ -23,7 +23,7 @@ Produces:
         ngrams_by_decade.txt
         ngrams_by_variant.txt
         lexical_stats.txt              (overall + by decade + by variant)
-        comparative_analysis.csv       (--compare mode only)
+        comparative_summary.txt        (--compare mode only)
 
 Usage — single language:
     python scripts/04_linguistics_analysis.py                      # Spanish (default)
@@ -55,8 +55,6 @@ ANALYSIS_ROOT_DIR = Path(__file__).parent.parent / "data" / "analysis"
 ANALYSIS_DIR      = ANALYSIS_ROOT_DIR / "linguistic"
 
 
-# Language-specific stopword lists
-
 STOPWORDS_ES = {
     "de","la","el","en","y","a","que","los","se","del","las","un","por","con",
     "una","su","para","es","al","lo","como","más","pero","sus","le","ya","o",
@@ -86,8 +84,6 @@ STOPWORDS_CA = {
 
 STOPWORDS = {"ca": STOPWORDS_CA, "es": STOPWORDS_ES}
 
-
-# Shared helpers 
 
 def safe_int(val, fallback=0):
     try:
@@ -153,10 +149,7 @@ def filter_records(records, args):
     return records
 
 
-# Text loading & tokenization 
-
 def tokenize(text, lang="es", remove_stopwords=True):
-    """Tokenise with language-appropriate character set and optional stopword removal."""
     if lang == "ca":
         pattern = r"\b[a-záéíóúüïàèòçl·]{3,}\b"
     else:
@@ -178,8 +171,6 @@ def load_doc(doc_id, lang="es"):
     return path.read_text(encoding="utf-8")
 
 
-# N-gram helpers
-
 def ngrams(tokens, n):
     return zip(*[islice(tokens, i, None) for i in range(n)])
 
@@ -188,29 +179,15 @@ def count_ngrams(tokens, n):
     return Counter(ngrams(tokens, n))
 
 def word_bigram_freq_from_tokens(tokens):
-    """
-    Return two Counters: unigram frequencies and tab-separated bigram frequencies,
-    mirroring the behaviour of the provided word_bigram_freq(filename) function
-    but operating on a pre-tokenised list.
-
-    Args:
-        tokens (list[str]): pre-tokenised word list (stopwords already removed
-                            upstream if desired).
-    Returns:
-        Counter: unigram frequencies  {word: count}
-        Counter: bigram frequencies   {"word1\tword2": count}
-    """
     word_freq   = Counter()
     bigram_freq = Counter()
     for i in range(len(tokens) - 1):
         word_freq[tokens[i]] += 1
         bigram_freq[f"{tokens[i]}\t{tokens[i + 1]}"] += 1
-    if tokens:                          # last word has no right neighbour
+    if tokens:
         word_freq[tokens[-1]] += 1
     return word_freq, bigram_freq
 
-
-# Keywords: log-odds ratio
 
 def log_odds(freq_i, total_i, freq_j, total_j):
     p_i = freq_i / total_i if total_i else 0
@@ -223,10 +200,6 @@ def log_odds(freq_i, total_i, freq_j, total_j):
 
 
 def compute_log_odds_keywords(group_a_tokens, group_b_tokens, min_freq=20):
-    """
-    Log-odds keywords between two token lists (group A vs group B).
-    Positive scores → distinctive of A; negative → distinctive of B.
-    """
     freq_a  = Counter(group_a_tokens)
     freq_b  = Counter(group_b_tokens)
     total_a = len(group_a_tokens)
@@ -242,8 +215,6 @@ def compute_log_odds_keywords(group_a_tokens, group_b_tokens, min_freq=20):
         scores[w] = log_odds(fa or 0.5, total_a, fb or 0.5, total_b)
     return sorted(scores.items(), key=lambda x: -abs(x[1]))
 
-
-# Lexical richness
 
 def lexical_stats(tokens_raw):
     types  = len(set(tokens_raw))
@@ -267,8 +238,6 @@ def lexical_stats(tokens_raw):
         "hapax_pct": round(hapax / types * 100, 1) if types else 0,
     }
 
-
-# Comparative vocabulary & alignment metrics
 
 def vocabulary_overlap(tokens_ca, tokens_es):
     types_ca = set(tokens_ca)
@@ -324,16 +293,11 @@ def fmt_section(title, lines):
 
 
 def write_collocations(pmi_items, top_n, out_path, args=None):
-    """Deprecated: collocations no longer computed. Function kept for compatibility."""
     pass
-\
+
+
 def write_keywords(scored, top_n, out_path, args=None,
                    label_a="Group A", label_b="Group B"):
-    """
-    Write log-odds keywords.
-    In compare mode label_a="Catalan", label_b="Spanish" (or vice-versa);
-    in single-language mode label_a/b are the earliest/latest decades.
-    """
     top_a = [(w, s) for w, s in scored if s > 0][:top_n]
     top_b = [(w, s) for w, s in scored if s < 0][:top_n]
     lines = []
@@ -354,7 +318,6 @@ def write_keywords(scored, top_n, out_path, args=None,
 
 
 def write_unigram_freq(word_freq, top_n, out_path, args=None):
-    """Write top-N unigram (word) frequencies."""
     lines = []
     if args is not None:
         lines.append(run_header(args))
@@ -372,11 +335,6 @@ def write_unigram_freq(word_freq, top_n, out_path, args=None):
 
 
 def write_bigram_freq_tsv(bigram_freq, top_n, out_path, args=None):
-    """
-    Write top-N bigram frequencies.
-    Keys in bigram_freq use tab-separation ("word1\tword2") as per the
-    provided word_bigram_freq convention; output displays them space-joined.
-    """
     lines = []
     if args is not None:
         lines.append(run_header(args))
@@ -394,7 +352,6 @@ def write_bigram_freq_tsv(bigram_freq, top_n, out_path, args=None):
 
 
 def write_ngram_freq(counter, n, top_n, out_path, args=None):
-    """Deprecated: trigram computation removed. Function kept for compatibility."""
     pass
 
 
@@ -413,11 +370,6 @@ def write_ngram_by_group(group_counters, n, top_n, out_path, args=None):
 
 
 def write_lexical_stats(overall_ca, overall_es, stats_by_group, out_path, args=None):
-    """
-    Write a combined lexical-stats file that includes:
-      1. Overall CA vs ES comparison.
-      2. Per-group (decade / variant) breakdown.
-    """
     header = (
         f"  {'GROUP':<28} {'TOKENS':>8} {'TYPES':>8} "
         f"{'TTR':>7} {'MATTR':>7} {'HAPAX':>7} {'HAPAX%':>7}"
@@ -428,7 +380,6 @@ def write_lexical_stats(overall_ca, overall_es, stats_by_group, out_path, args=N
     if args is not None:
         lines.append(run_header(args))
 
-    # Overall CA vs ES  
     overall_section = [header, sep]
     for lang_label, s in [("Overall [CA]", overall_ca), ("Overall [ES]", overall_es)]:
         if s:
@@ -439,7 +390,6 @@ def write_lexical_stats(overall_ca, overall_es, stats_by_group, out_path, args=N
             )
     lines.append(fmt_section("Overall Lexical Statistics: CA vs ES", overall_section))
 
-    # Per-group breakdown 
     group_section = [header, sep]
     for group, s in sorted(stats_by_group.items()):
         group_section.append(
@@ -451,8 +401,6 @@ def write_lexical_stats(overall_ca, overall_es, stats_by_group, out_path, args=N
 
     out_path.write_text("\n".join(lines), encoding="utf-8")
 
-
-# Comparative text summary 
 
 def write_comparative_txt(records, lex_ca_dec, lex_es_dec,
                            tokens_ca, tokens_es, top_n, out_path, args):
@@ -500,146 +448,8 @@ def write_comparative_txt(records, lex_ca_dec, lex_es_dec,
     out_path.write_text("\n".join(lines), encoding="utf-8")
 
 
-# Comparative CSV export
-def write_comparative_csv(records, stats_ca, stats_es, out_path, args):
-    fieldnames = [
-        "source_file", "language", "section", "subgroup",
-        "rank", "item", "item_2",
-        "value", "value_2", "value_3", "notes",
-    ]
-    rows = []
-
-    def add_row(source_file, language, section, subgroup="", rank="",
-                item="", item_2="", value="", value_2="", value_3="", notes=""):
-        rows.append({
-            "source_file": source_file, "language": language,
-            "section": section,        "subgroup": subgroup,
-            "rank": rank,              "item": item,
-            "item_2": item_2,          "value": value,
-            "value_2": value_2,        "value_3": value_3,
-            "notes": notes,
-        })
-
-    def add_single_language_rows(stats, lang):
-        lang_dir = lang
-
-        kw_path = f"{lang_dir}/keywords_log_odds.txt"
-        top_pos = [(w, s) for w, s in stats["keywords"] if s > 0][:args.top_n]
-        top_neg = [(w, s) for w, s in stats["keywords"] if s < 0][:args.top_n]
-        kw_label_a = stats.get("kw_label_a", "positive")
-        kw_label_b = stats.get("kw_label_b", "negative")
-        for idx, (word, score) in enumerate(top_pos, start=1):
-            add_row(kw_path, lang, "keywords", subgroup="positive_log_odds", rank=idx,
-                    item=word, value=round(score, 4), notes=f"distinctive_of={kw_label_a}")
-        for idx, (word, score) in enumerate(top_neg, start=1):
-            add_row(kw_path, lang, "keywords", subgroup="negative_log_odds", rank=idx,
-                    item=word, value=round(score, 4), notes=f"distinctive_of={kw_label_b}")
-
-        # unigrams
-        uni_path = f"{lang_dir}/unigrams_freq.txt"
-        for idx, (word, count) in enumerate(stats["unigrams"].most_common(args.top_n), start=1):
-            add_row(uni_path, lang, "unigrams_freq", rank=idx, item=word, value=count)
-
-        # bigrams 
-        bg_path = f"{lang_dir}/bigrams_freq.txt"
-        for idx, (pair, count) in enumerate(stats["bigrams_tsv"].most_common(args.top_n), start=1):
-            w1, w2 = pair.split("\t", 1)
-            add_row(bg_path, lang, "bigrams_freq", rank=idx,
-                    item=w1, item_2=w2, value=count)
-
-        # ngrams by decade / variant
-        decade_path = f"{lang_dir}/ngrams_by_decade.txt"
-        for group, counter in sorted(stats["bigrams_by_decade"].items()):
-            for idx, (ng, count) in enumerate(counter.most_common(20), start=1):
-                add_row(decade_path, lang, "ngrams_by_decade", subgroup=group, rank=idx,
-                        item=" ".join(ng), value=count)
-
-        variant_path = f"{lang_dir}/ngrams_by_variant.txt"
-        for group, counter in sorted(stats["bigrams_by_variant"].items()):
-            for idx, (ng, count) in enumerate(counter.most_common(20), start=1):
-                add_row(variant_path, lang, "ngrams_by_variant", subgroup=group, rank=idx,
-                        item=" ".join(ng), value=count)
-
-        # lexical stats — overall + decade + variant
-        lexical_path = f"{lang_dir}/lexical_stats.txt"
-        overall = stats.get("lex_total", {})
-        if overall:
-            add_row(lexical_path, lang, "lexical_stats", subgroup="overall",
-                    item="all",
-                    value=overall["tokens"], value_2=overall["types"], value_3=overall["ttr"],
-                    notes=f"mattr={overall['mattr']}; hapax={overall['hapax']}; hapax_pct={overall['hapax_pct']}")
-        for group, metrics in sorted(stats["lex_decade"].items()):
-            add_row(lexical_path, lang, "lexical_stats", subgroup="decade",
-                    item=group,
-                    value=metrics["tokens"], value_2=metrics["types"], value_3=metrics["ttr"],
-                    notes=f"mattr={metrics['mattr']}; hapax={metrics['hapax']}; hapax_pct={metrics['hapax_pct']}")
-        for group, metrics in sorted(stats["lex_variant"].items()):
-            add_row(lexical_path, lang, "lexical_stats", subgroup="variant",
-                    item=group,
-                    value=metrics["tokens"], value_2=metrics["types"], value_3=metrics["ttr"],
-                    notes=f"mattr={metrics['mattr']}; hapax={metrics['hapax']}; hapax_pct={metrics['hapax_pct']}")
-
-    add_single_language_rows(stats_ca, "ca")
-    add_single_language_rows(stats_es, "es")
-
-    # shared comparative section
-    shared_path = "comparative_summary.txt"
-    add_row(shared_path, "compare", "run_configuration", item="documents_analysed", value=len(records))
-    add_row(shared_path, "compare", "run_configuration", item="year_filter",
-            value=args.year if args.year is not None else "")
-    add_row(shared_path, "compare", "run_configuration", item="variety_filter", value=args.variety or "")
-    add_row(shared_path, "compare", "run_configuration", item="top_n",      value=args.top_n)
-    add_row(shared_path, "compare", "run_configuration", item="min_freq",   value=args.min_freq)
-
-    tokens_ca_list = stats_ca["lex_total_tokens_raw"]
-    tokens_es_list = stats_es["lex_total_tokens_raw"]
-    add_row(shared_path, "compare", "corpus_overview", item="ca_total_tokens", value=len(tokens_ca_list))
-    add_row(shared_path, "compare", "corpus_overview", item="es_total_tokens", value=len(tokens_es_list))
-    add_row(shared_path, "compare", "corpus_overview", item="es_ca_token_ratio",
-            value=round(len(tokens_es_list) / len(tokens_ca_list), 4) if tokens_ca_list else 0)
-
-    shared_vocab, overlap_ca, overlap_es = vocabulary_overlap(tokens_ca_list, tokens_es_list)
-    add_row(shared_path, "compare", "vocabulary_overlap", item="shared_types",  value=len(shared_vocab))
-    add_row(shared_path, "compare", "vocabulary_overlap", item="overlap_ca",    value=overlap_ca)
-    add_row(shared_path, "compare", "vocabulary_overlap", item="overlap_es",    value=overlap_es)
-    for idx, token in enumerate(sorted(shared_vocab)[:30], start=1):
-        add_row(shared_path, "compare", "vocabulary_overlap_sample", rank=idx, item=token)
-
-    for row in decade_lexical_divergence(stats_ca["lex_decade"], stats_es["lex_decade"]):
-        add_row(shared_path, "compare", "lexical_divergence_by_decade",
-                item=row["decade"],
-                value=row["ca_ttr"],   value_2=row["es_ttr"],   value_3=row["ttr_delta"],
-                notes=(f"ca_mattr={row['ca_mattr']}; es_mattr={row['es_mattr']}; "
-                       f"ca_hapax_pct={row['ca_hapax_pct']}; es_hapax_pct={row['es_hapax_pct']}"))
-
-    length_rows = sorted(
-        length_ratio_stats(records), key=lambda x: x["ratio"], reverse=True
-    )[:args.top_n]
-    for idx, row in enumerate(length_rows, start=1):
-        add_row(shared_path, "compare", "length_ratio_top_docs",
-                subgroup=str(row["year"]), rank=idx,
-                item=row["doc_id"], item_2=row["title"],
-                value=row["ca_tokens"], value_2=row["es_tokens"], value_3=row["ratio"],
-                notes=f"variant={row['variant']}")
-
-    with open(out_path, "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(rows)
-    print(f"Comparative CSV export saved → {out_path}")
-
-
-# Core analysis runner
-
 def run_analysis(records, lang, args,
                  kw_compare_tokens=None, kw_label_a=None, kw_label_b=None):
-    """
-    Run full single-language analysis.
-
-    In compare mode log-odds keywords are computed as CA vs ES instead of earliest-vs-latest decade.
-
-    Returns a stats dict.
-    """
     all_tokens_raw   = []
     all_tokens_clean = []
     decade_tokens    = defaultdict(list)
@@ -662,19 +472,15 @@ def run_analysis(records, lang, args,
 
     print(f"  [{lang}] Tokens (raw): {len(all_tokens_raw):,}  (clean): {len(all_tokens_clean):,}")
 
-    # Unigrams + bigrams via word_bigram_freq_from_tokens (stopwords already removed)
     unigram_counts, bigram_tsv_counts = word_bigram_freq_from_tokens(all_tokens_clean)
 
-    # Log-odds keywords
     if kw_compare_tokens is not None:
-        # compare mode
         kw_scores  = compute_log_odds_keywords(
             all_tokens_clean, kw_compare_tokens, min_freq=args.min_freq
         )
         _label_a = kw_label_a or lang
         _label_b = kw_label_b or "other"
     else:
-        # single-language mode: compare earliest vs latest decade
         dec_keys = sorted(decade_tokens.keys())
         kw_scores = []
         _label_a  = dec_keys[0]  if dec_keys            else "A"
@@ -685,7 +491,6 @@ def run_analysis(records, lang, args,
                 min_freq=args.min_freq,
             )
 
-    # Lexical stats
     lex_decade  = {d: lexical_stats(toks) for d, toks in decade_tokens.items()}
     lex_variant = {v: lexical_stats(toks) for v, toks in variant_tokens.items()}
     lex_total   = lexical_stats(all_tokens_clean)
@@ -694,8 +499,8 @@ def run_analysis(records, lang, args,
         "keywords":            kw_scores,
         "kw_label_a":          _label_a,
         "kw_label_b":          _label_b,
-        "unigrams":            unigram_counts,          # Counter {word: count}
-        "bigrams_tsv":         bigram_tsv_counts,       # Counter {"w1\tw2": count}
+        "unigrams":            unigram_counts,
+        "bigrams_tsv":         bigram_tsv_counts,
         "bigrams_by_decade":   {d: count_ngrams(toks, 2) for d, toks in decade_tokens.items()},
         "bigrams_by_variant":  {v: count_ngrams(toks, 2) for v, toks in variant_tokens.items()},
         "lex_decade":          lex_decade,
@@ -727,7 +532,6 @@ def save_single_outputs(stats, lang, out_dir, args):
     write_ngram_by_group(stats["bigrams_by_variant"], 2, 20,
                          out_dir / "ngrams_by_variant.txt", args)
 
-    # Build combined per-group dict for the breakdown section
     grouped = {
         **{f"[decade]  {k}": v for k, v in stats["lex_decade"].items()},
         **{f"[variant] {k}": v for k, v in stats["lex_variant"].items()},
@@ -740,8 +544,6 @@ def save_single_outputs(stats, lang, out_dir, args):
         args=args,
     )
 
-
-# CLI 
 
 def parse_args():
     parser = argparse.ArgumentParser(
@@ -770,8 +572,6 @@ def parse_args():
     parser.add_argument("--top-n",      type=int,  default=50)
     parser.add_argument("--min-freq",   type=int,  default=5)
 
-    parser.add_argument("--no-csv",     action="store_true",
-                        help="Skip comparative CSV export in --compare mode.")
     parser.add_argument("--out-dir",    type=Path, default=None)
 
     return parser.parse_args()
@@ -803,12 +603,10 @@ def main():
     if args.compare:
         print("\n── COMPARATIVE MODE (CA ↔ ES) ──")
 
-        # First pass: collect both token lists for cross-language log-odds 
         print("\n[1/2] Analysing Catalan originals…")
         out_ca = base_dir / "compare" / "ca"
         out_ca.mkdir(parents=True, exist_ok=True)
 
-        # Initial run without cross-language keywords (to get token list)
         stats_ca_tmp = run_analysis(records, "ca", args)
         tokens_ca    = stats_ca_tmp["lex_total_tokens_raw"]
 
@@ -819,18 +617,14 @@ def main():
         stats_es_tmp = run_analysis(records, "es", args)
         tokens_es    = stats_es_tmp["lex_total_tokens_raw"]
 
-        # Second pass: recompute keywords as CA vs ES 
         print("\nRecomputing cross-language keywords (CA vs ES)…")
         kw_ca_vs_es = compute_log_odds_keywords(tokens_ca, tokens_es, min_freq=args.min_freq)
 
-        # Shared CA-vs-ES keyword scores into both stats dicts
         stats_ca = {**stats_ca_tmp, "keywords": kw_ca_vs_es,
                     "kw_label_a": "Catalan", "kw_label_b": "Spanish"}
         stats_es = {**stats_es_tmp, "keywords": kw_ca_vs_es,
                     "kw_label_a": "Catalan", "kw_label_b": "Spanish"}
 
-        # Save per-language outputs
-        # Lexical-stats for compare mode: both overall_ca and overall_es 
         def save_compare_outputs(stats_ca, stats_es):
             grouped_ca = {
                 **{f"[decade]  {k}": v for k, v in stats_ca["lex_decade"].items()},
@@ -855,7 +649,6 @@ def main():
                 args=args,
             )
 
-        # Write remaining per-language files (keywords, n-grams)
         for stats, out_dir, lang in [(stats_ca, out_ca, "ca"), (stats_es, out_es, "es")]:
             write_keywords(
                 stats["keywords"], args.top_n,
@@ -874,7 +667,6 @@ def main():
 
         save_compare_outputs(stats_ca, stats_es)
 
-        # Comparative summary 
         print("\nBuilding comparative outputs…")
         out_cmp = base_dir / "compare"
         write_comparative_txt(
@@ -885,12 +677,6 @@ def main():
             out_cmp / "comparative_summary.txt",
             args,
         )
-        if not args.no_csv:
-            write_comparative_csv(
-                records, stats_ca, stats_es,
-                out_cmp / "comparative_analysis.csv",
-                args,
-            )
 
         print(f"\nAll comparative outputs → {out_cmp}")
 
