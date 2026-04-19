@@ -116,7 +116,6 @@ Lluvia. [(Se envuelve en el manto de una tormenta.)] ¡Oh, gracias! [(Se lo pone
 
 ¡Louk! [Llamando.] ¡Señorita! ¡Señorita! Despiértense, levántense y abran la puerta.
 
-[Literario. Conservar el registro, el tono y el estilo.]
 
 Hogar. [Con amargura]. Ya da igual. Márchate de aquí. No durará mucho.
 
@@ -174,7 +173,6 @@ Rain—[(Con desdén.)] No; ustedes son uno de esos austriacos que incitan a los
 
 Al ver la pistola, no pudo reprimir un grito de horror. El hombre dio un salto, como un caballo azotado.
 
-[Literary text]
 
 ¡Madre! No me asusten así. ¿Qué ocurre?
 
@@ -343,7 +341,6 @@ Lluvia. ¿Habéis visto la ópera Ernani?
 
 Lluvia. Tal vez recordaréis aquella gran escena en la que Hernani, huyendo de sus perseguidores, como vosotros esta noche, se refugiaba en el castillo de su peor enemigo, un viejo noble castellano. El noble se negaba a delatarlo. Para él, la ley del huésped era sagrada.
 
-[Literary text]
 
 ¿Y ustedes, han comprendido bien la idea? ¿La han asimilado? ¿La ha asimilado su gente?
 
@@ -1572,7 +1569,6 @@ Blun. [(Aturdido.)] ¡Veintitrés! ¡Veintitrés! [(Reflexionando.)] ¡Hmm! [(To
 
 Blun: Si esta tarde, cuando me dijeron lo que me dijeron, tenían veintitrés años, entonces sí que me lo creo.
 
-[Literaria. Mantener el registro, el tono y el estilo.]
 
 [Cate.] No sé si se da cuenta, señor, de la posición que ocupa mi hija y la que tiene el comandante Saranoff, a quien usted pretende reemplazar. Los Petkoff y los Saranoff son familias conocidas, las más ricas e importantes de toda la región. Nuestra posición es casi histórica. Llevamos más de veinte años gozándola.
 
