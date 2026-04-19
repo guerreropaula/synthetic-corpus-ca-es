@@ -1,6 +1,6 @@
 # Building a Synthetic Parallel Catalan–Spanish Corpus of Literary Texts
 
-This repository contains the code and methodology for creating, processing, and analyzing a synthetic parallel bilingual corpus (ca-es). The corpus comprises 63 literary documents published between 1905 and 1948, automatically translated using Gemma-27B-IT.
+This repository contains the code and methodology for creating, processing, and analyzing a synthetic parallel bilingual corpus (ca-es). The corpus comprises 63 literary documents (totaling ∼1,6 million words) published between 1905 and 1948, automatically translated using Gemma-27B-IT.
 
 The corpus is intended as a back-translation resource for training machine translation systems.
 
