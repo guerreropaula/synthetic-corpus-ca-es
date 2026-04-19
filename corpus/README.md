@@ -37,11 +37,6 @@ Paragraph-level aligned corpus. Each row represents one aligned paragraph pair.
 
 ### corpus_ca_es_fulltext.jsonl
 Document-level corpus. Each line is a JSON object containing the complete text of one document in both languages.
-| Column | Description |
-|---|---|
-| `doc_id` | Document identifier |
-| `text_ca` | Full Catalan source text (paragraphs joined) |
-| `text_es` | Full Spanish translation (paragraphs joined) |
 
 ---
 
@@ -49,17 +44,4 @@ Document-level corpus. Each line is a JSON object containing the complete text o
 Filtered version of the metadata, restricted to the 63 documents present in the final aligned corpus. Produced by `06_filter_metadata.py`. This file serves as the definitive registry of documents included in the corpus.
 
 Columns are identical to `data/raw/metadata.csv`:
-
-| Column | Description |
-|---|---|
-| `doc_id` | Internal document identifier |
-| `obra_id` | Original CTILC numeric identifier |
-| `autor` | Author name |
-| `titol` | Title |
-| `any` | Year of publication |
-| `llengua` | Textual domain (`LIT` for all documents in this corpus) |
-| `traduccio` | `1` if the Catalan text is itself a translation; `0` if an original |
-| `variant` | Dialectal variant of Catalan |
-| `n_paragraphs` | Paragraph count |
-
 
