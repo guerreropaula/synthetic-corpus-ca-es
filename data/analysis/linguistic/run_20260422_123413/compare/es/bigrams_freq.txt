@@ -1,0 +1,64 @@
+CORPUS RUN INFO
+
+date: 2026-04-22 12:34:16.875119
+lang: es
+compare: True
+year: 1905
+variety: None
+top_n: 50
+min_freq: 5
+
+============================================================
+  Top 50 Bigrams by Frequency
+============================================================
+  BIGRAM                                       FREQ
+  mismo tiempo                                  235
+  quién sabe                                    220
+  maría gloria                                  215
+  todas partes                                  208
+  rey rodolfo                                   204
+  día siguiente                                 192
+  don pedro                                     187
+  había sido                                    183
+  jordi dandin                                  183
+  nunca había                                   167
+  voz baja                                      164
+  conde orlof                                   163
+  aquel hombre                                  152
+  había visto                                   137
+  tal vez                                       133
+  había hecho                                   132
+  darse cuenta                                  130
+  doña maría                                    127
+  tomás bajalta                                 122
+  señor josep                                   116
+  don modesto                                   116
+  primera vez                                   113
+  hijos israel                                  111
+  príncipe demetrio                             111
+  anna maria                                    102
+  estaba punto                                   99
+  tan bien                                       98
+  heredero escampa                               97
+  esta casa                                      93
+  san pedro                                      91
+  tierra egipto                                  91
+  había dado                                     90
+  había tenido                                   90
+  señor sotenville                               90
+  toda vida                                      88
+  dos tres                                       86
+  había ido                                      82
+  pues bien                                      80
+  ahora mismo                                    79
+  ver cómo                                       76
+  había dejado                                   76
+  san roque                                      76
+  alguna vez                                     75
+  hoy día                                        75
+  misma manera                                   74
+  dio cuenta                                     74
+  está bien                                      73
+  había estado                                   73
+  aquella noche                                  73
+  toda tierra                                    73
