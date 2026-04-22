@@ -326,7 +326,7 @@ def main():
 
             is_truncated = len(paras_ca) != len(paras_es)
             if is_truncated:
-                print(f"  [WARN] {doc_id}: CA={len(paras_ca)} vs ES={len(paras_es)} — running e5 alignment.")
+                print(f"  [WARN] {doc_id}: CA={len(paras_ca)} vs ES={len(paras_es)} — running alignment.")
 
             try:
                 pairs = align_paragraphs(paras_ca, paras_es) if is_truncated else list(zip(paras_ca, paras_es))

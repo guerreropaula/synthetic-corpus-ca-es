@@ -220,7 +220,7 @@ def lexical_stats(tokens_raw):
     types  = len(set(tokens_raw))
     tokens = len(tokens_raw)
     ttr    = types / tokens if tokens else 0
-    window = 100
+    window = 500
     if tokens >= window:
         ttrs  = [len(set(tokens_raw[i:i + window])) / window
                  for i in range(0, tokens - window + 1, window)]
