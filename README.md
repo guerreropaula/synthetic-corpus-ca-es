@@ -28,7 +28,7 @@ The pipeline consists of six numbered scripts executed in sequence:
 
 1. **01_load_texts.py** — Parses CTILC XML files, extracts paragraphs, writes plain-text documents and `metadata.csv`.
 2. **02_translate_ca_es.py** — Translates each document paragraph by paragraph from Catalan to Spanish using Gemma-27B-IT.
-3. **03_build_corpus.py** — Removes MT prompt artefacts, aligns source and translation at paragraph level, writes the corpus files. Filters `metadata.csv` to retain only documents included in the final aligned corpus.
+3. **03_build_corpus.py** — Removes MT prompt artifacts, aligns source and translation at paragraph level, writes the corpus files. Filters `metadata.csv` to retain only documents included in the final aligned corpus.
 4. **04_analyze_corpus.py** — Computes corpus distribution statistics (temporal, variant, author, word counts) and outputs figures.
 5. **05_linguistics_analysis.py** — Performs linguistic analysis: unigram/bigram frequencies, log-odds extraction, and lexical richness metrics (TTR, MATTR, hapax legomena).
 

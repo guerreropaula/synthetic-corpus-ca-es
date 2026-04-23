@@ -24,14 +24,14 @@ Reads each Catalan document from `data/raw/` and translates it paragraph by para
 ---
 
 ### 03_build_corpus.py
-Reads source texts from `data/raw/` and translations from `data/processed/`, removes MT prompt-artefact lines (matching the pattern `[Texto literario...]`, `[Literary...]`), aligns documents at the paragraph level, and writes the final corpus.
+Reads source texts from `data/raw/` and translations from `data/processed/`, removes MT prompt-artifact lines (matching the pattern `[Texto literario...]`, `[Literary...]`), aligns documents at the paragraph level, and writes the final corpus.
 Filters `data/raw/metadata.csv` to retain only the documents present in `corpus/corpus_ca_es.csv`, producing a clean registry of all documents included in the final corpus (`corpus/metadata_filtered.csv`).
 
 Paragraph counts between source and translation are compared after splitting on blank lines. If they differ, semantic alignment is performed using `intfloat/multilingual-e5-large` via a DP alignment algorithm (vecalign-style).
 
 **Flags:**
 - `--dry-run` — preview which lines would be removed without modifying files.
-- `--no-preprocess` — skip the artefact removal step.
+- `--no-preprocess` — skip the artifact removal step.
 
 **Output:**
 - `corpus/corpus_ca_es.csv` — paragraph-level aligned corpus; one row per paragraph pair.
