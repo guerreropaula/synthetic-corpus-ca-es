@@ -1,12 +1,12 @@
 CORPUS RUN INFO
 
-date: 2026-04-23 18:58:57.792492
-lang: es
-compare: True
-year: 1905
-variety: None
-top_n: 50
-min_freq: 5
+date       : 2026-04-23 23:30:15.896761
+lang       : es
+compare    : True
+split_year : <1920 (early)  vs  >=1920 (late)
+variety    : None
+top_n      : 50
+min_freq   : 50
 
 ============================================================
   Top 50 Bigrams by Frequency

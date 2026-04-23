@@ -273,9 +273,6 @@ def write_text_report(stats: dict, out_path: Path, args: argparse.Namespace) -> 
     lines.extend(text_section("Executive Summary"))
     lines.extend([
         f"- The filtered corpus contains {format_stat(stats['total'])} documents spanning {year_range}.",
-        f"- Catalan source texts total {format_stat(stats['ca_words'])} words (source raw/).",
-        f"- Spanish translations total {format_stat(stats['es_words'])} words (source raw/).",
-        f"- Total paragraphs: {format_stat(stats['total_paragraphs'])}.",
         f"- The most represented decade is {top_decade}.",
         f"- The dominant textual variant is {top_variant}.",
         f"- The translation profile is led by {translation_profile}.",
@@ -285,8 +282,6 @@ def write_text_report(stats: dict, out_path: Path, args: argparse.Namespace) -> 
     if stats["aligned_corpus"]["found"]:
         lines.extend([
             f"- Parallel Corpus (corpus_ca_es.csv): {format_stat(stats['aligned_corpus']['aligned_pairs'])} aligned pairs.",
-            f"  • Catalan: {format_stat(stats['aligned_corpus']['ca_words'])} words",
-            f"  • Spanish: {format_stat(stats['aligned_corpus']['es_words'])} words",
             "",
         ])
 

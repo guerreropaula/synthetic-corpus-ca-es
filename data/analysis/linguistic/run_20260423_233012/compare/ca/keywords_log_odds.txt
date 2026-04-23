@@ -1,6 +1,6 @@
 CORPUS RUN INFO
 
-date       : 2026-04-23 20:22:00.928088
+date       : 2026-04-23 23:30:15.883900
 lang       : es
 compare    : True
 split_year : <1920 (early)  vs  >=1920 (late)
@@ -83,22 +83,22 @@ min_freq   : 50
   sotenville                      -5.4033
   anna                            -5.2395
   garcia                          -5.2310
-  clitifó                         -5.2224
   tanmateix                       -5.2224
+  clitifó                         -5.2224
   polònius                        -5.1962
   aaró                            -5.1783
   raina                           -5.1601
   prendre                         -5.1416
   virgínia                        -5.1322
-  sòc                             -5.1227
   pina                            -5.1227
+  sòc                             -5.1227
   menedem                         -5.1132
   cambó                           -5.0937
-  angèlica                        -5.0639
   cassanella                      -5.0639
+  angèlica                        -5.0639
   vore                            -5.0537
-  serg                            -5.0435
   agneta                          -5.0435
+  serg                            -5.0435
   màxi                            -5.0013
   filàntrop                       -4.9231
   blun                            -4.9114
@@ -106,12 +106,12 @@ min_freq   : 50
   virg                            -4.8632
   petk                            -4.8382
   clínia                          -4.8382
-  mòni                            -4.8254
   madalena                        -4.8254
-  lucr                            -4.8125
+  mòni                            -4.8254
   cate                            -4.8125
-  louka                           -4.7994
+  lucr                            -4.8125
   pigmalió                        -4.7994
+  louka                           -4.7994
   louk                            -4.7862
   lubin                           -4.7728
   atenesos                        -4.7728

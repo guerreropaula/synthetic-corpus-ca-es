@@ -1,6 +1,6 @@
 CORPUS RUN INFO
 
-date       : 2026-04-23 20:22:00.928423
+date       : 2026-04-23 23:30:15.884528
 lang       : es
 compare    : True
 split_year : <1920 (early)  vs  >=1920 (late)
