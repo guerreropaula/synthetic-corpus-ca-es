@@ -6,7 +6,7 @@ Extended corpus linguistics analysis supporting:
   • Translated Spanish texts        (data/processed/<doc_id>_es.txt)
   • Comparative Catalan ↔ Spanish analysis
 
-Covers: collocations, keywords (log-odds CA vs ES), n-gram frequencies,
+Covers: collocations, keywords (log-odds early vs. late period), n-gram frequencies,
         type-token ratio, lexical richness (overall + per-decade + per-variant),
         and — in comparative mode — cross-language alignment metrics.
 
@@ -17,7 +17,7 @@ Reads:
 
 Produces:
     data/analysis/linguistic/run_<stamp>/<lang|compare>/
-        keywords_log_odds.txt          (CA vs ES in --compare; decade-based otherwise)
+        keywords_log_odds.txt          (early vs late period)
         unigrams_freq.txt
         bigrams_freq.txt
         ngrams_by_decade.txt
@@ -26,17 +26,18 @@ Produces:
         comparative_summary.txt        (--compare mode only)
 
 Usage — single language:
-    python scripts/04_linguistics_analysis.py                      # Spanish (default)
-    python scripts/04_linguistics_analysis.py --lang ca            # Catalan originals
-    python scripts/04_linguistics_analysis.py --lang es            # Spanish translations
-    python scripts/04_linguistics_analysis.py --lang ca --year 1905
-    python scripts/04_linguistics_analysis.py --lang es --variety central
-    python scripts/04_linguistics_analysis.py --lang ca --top-n 50 --min-freq 5
+    python scripts/05_linguistics_analysis.py                      # Spanish (default)
+    python scripts/05_linguistics_analysis.py --lang ca            # Catalan originals
+    python scripts/05_linguistics_analysis.py --lang es            # Spanish translations
+    python scripts/05_linguistics_analysis.py --lang ca --split-year 1925
+    python scripts/05_linguistics_analysis.py --lang es --variety central
+    python scripts/05_linguistics_analysis.py --lang ca --top-n 50 --min-freq 5
 
 Usage — comparative:
-    python scripts/04_linguistics_analysis.py --compare
-    python scripts/04_linguistics_analysis.py --compare --year 1905 --variety central
-    python scripts/04_linguistics_analysis.py --compare --top-n 30 --min-freq 10
+    python scripts/05_linguistics_analysis.py --compare
+    python scripts/05_linguistics_analysis.py --compare --split-year 1925
+    python scripts/05_linguistics_analysis.py --compare --variety central
+    python scripts/05_linguistics_analysis.py --compare --top-n 30 --min-freq 10
 """
 
 import argparse
@@ -53,6 +54,8 @@ RAW_DIR           = Path(__file__).parent.parent / "data" / "raw"
 PROCESSED_DIR     = Path(__file__).parent.parent / "data" / "processed"
 ANALYSIS_ROOT_DIR = Path(__file__).parent.parent / "data" / "analysis"
 ANALYSIS_DIR      = ANALYSIS_ROOT_DIR / "linguistic"
+
+DEFAULT_SPLIT_YEAR = 1920   # midpoint of corpus range 1905–1948
 
 
 STOPWORDS_ES = {
@@ -102,16 +105,16 @@ def load_metadata(csv_path):
 
 
 def run_header(args):
-    args = args or argparse.Namespace()
+    split = getattr(args, "split_year", DEFAULT_SPLIT_YEAR)
     return "\n".join([
         "CORPUS RUN INFO\n",
-        f"date: {datetime.now()}",
-        f"lang: {getattr(args, 'lang', None)}",
-        f"compare: {getattr(args, 'compare', False)}",
-        f"year: {getattr(args, 'year', None)}",
-        f"variety: {getattr(args, 'variety', None)}",
-        f"top_n: {getattr(args, 'top_n', None)}",
-        f"min_freq: {getattr(args, 'min_freq', None)}",
+        f"date       : {datetime.now()}",
+        f"lang       : {getattr(args, 'lang', None)}",
+        f"compare    : {getattr(args, 'compare', False)}",
+        f"split_year : <{split} (early)  vs  >={split} (late)",
+        f"variety    : {getattr(args, 'variety', None)}",
+        f"top_n      : {getattr(args, 'top_n', None)}",
+        f"min_freq   : {getattr(args, 'min_freq', None)}",
     ])
 
 
@@ -127,7 +130,7 @@ def filter_records(records, args):
             return es_ok
 
     records = [r for r in records if has_file(r)]
-
+    
     if getattr(args, "year", None) is not None:
         records = [r for r in records if safe_int(r.get("year", "0")) >= args.year]
 
@@ -296,8 +299,7 @@ def write_collocations(pmi_items, top_n, out_path, args=None):
     pass
 
 
-def write_keywords(scored, top_n, out_path, args=None,
-                   label_a="Group A", label_b="Group B"):
+def write_keywords(scored, top_n, out_path, args, label_a, label_b):
     top_a = [(w, s) for w, s in scored if s > 0][:top_n]
     top_b = [(w, s) for w, s in scored if s < 0][:top_n]
     lines = []
@@ -305,7 +307,7 @@ def write_keywords(scored, top_n, out_path, args=None,
         lines.append(run_header(args))
         lines.append("")
     lines.append(fmt_section(
-        "Keywords: Log-Odds Ratio",
+        "Keywords: Log-Odds Ratio (period comparison)",
         [
             f"  >> Distinctive of {label_a} (positive log-odds)",
             *[f"  {w:<30} {s:>8.4f}" for w, s in top_a],
@@ -448,10 +450,13 @@ def write_comparative_txt(records, lex_ca_dec, lex_es_dec,
     out_path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def run_analysis(records, lang, args,
-                 kw_compare_tokens=None, kw_label_a=None, kw_label_b=None):
-    all_tokens_raw   = []
+def run_analysis(records, lang, args, split_year=None):
+    if split_year is None:
+        split_year = getattr(args, "split_year", DEFAULT_SPLIT_YEAR)
+
     all_tokens_clean = []
+    early_tokens     = []
+    late_tokens      = []
     decade_tokens    = defaultdict(list)
     variant_tokens   = defaultdict(list)
 
@@ -460,36 +465,35 @@ def run_analysis(records, lang, args,
         if not text:
             print(f"  WARNING: no file for {r['doc_id']} [{lang}], skipping.")
             continue
-        raw   = tokenize(text, lang, remove_stopwords=False)
         clean = tokenize(text, lang, remove_stopwords=True)
-        all_tokens_raw.extend(raw)
         all_tokens_clean.extend(clean)
 
-        dec = decade(safe_int(r.get("year", "0")))
+        year = safe_int(r.get("year", "0"))
+        if year and year < split_year:
+            early_tokens.extend(clean)
+        else:
+            late_tokens.extend(clean)
+
+        dec = decade(year)
         var = r.get("variant", "unspecified").strip() or "unspecified"
         decade_tokens[dec].extend(clean)
         variant_tokens[var].extend(clean)
 
-    print(f"  [{lang}] Tokens (raw): {len(all_tokens_raw):,}  (clean): {len(all_tokens_clean):,}")
+    print(f"  [{lang}] Total tokens: {len(all_tokens_clean):,}  "
+          f"Early (<{split_year}): {len(early_tokens):,}  "
+          f"Late (≥{split_year}): {len(late_tokens):,}")
+
+    if not early_tokens or not late_tokens:
+        print(f"  WARNING: one period has no tokens. "
+              f"Try adjusting --split-year (current: {split_year}).")
+
+    label_a = f"early (<{split_year})"
+    label_b = f"late (≥{split_year})"
+
+    kw_scores = compute_log_odds_keywords(early_tokens, late_tokens,
+                                          min_freq=args.min_freq)
 
     unigram_counts, bigram_tsv_counts = word_bigram_freq_from_tokens(all_tokens_clean)
-
-    if kw_compare_tokens is not None:
-        kw_scores  = compute_log_odds_keywords(
-            all_tokens_clean, kw_compare_tokens, min_freq=args.min_freq
-        )
-        _label_a = kw_label_a or lang
-        _label_b = kw_label_b or "other"
-    else:
-        dec_keys = sorted(decade_tokens.keys())
-        kw_scores = []
-        _label_a  = dec_keys[0]  if dec_keys            else "A"
-        _label_b  = dec_keys[-1] if len(dec_keys) >= 2  else "B"
-        if len(dec_keys) >= 2:
-            kw_scores = compute_log_odds_keywords(
-                decade_tokens[dec_keys[0]], decade_tokens[dec_keys[-1]],
-                min_freq=args.min_freq,
-            )
 
     lex_decade  = {d: lexical_stats(toks) for d, toks in decade_tokens.items()}
     lex_variant = {v: lexical_stats(toks) for v, toks in variant_tokens.items()}
@@ -497,8 +501,8 @@ def run_analysis(records, lang, args,
 
     return {
         "keywords":            kw_scores,
-        "kw_label_a":          _label_a,
-        "kw_label_b":          _label_b,
+        "kw_label_a":          label_a,
+        "kw_label_b":          label_b,
         "unigrams":            unigram_counts,
         "bigrams_tsv":         bigram_tsv_counts,
         "bigrams_by_decade":   {d: count_ngrams(toks, 2) for d, toks in decade_tokens.items()},
@@ -517,8 +521,8 @@ def save_single_outputs(stats, lang, out_dir, args):
         stats["keywords"], args.top_n,
         out_dir / "keywords_log_odds.txt",
         args=args,
-        label_a=stats.get("kw_label_a", "A"),
-        label_b=stats.get("kw_label_b", "B"),
+        label_a=stats["kw_label_a"],
+        label_b=stats["kw_label_b"],
     )
 
     write_unigram_freq(stats["unigrams"], args.top_n,
@@ -562,12 +566,16 @@ def parse_args():
     )
 
     parser.add_argument("--csv",        type=Path, default=RAW_DIR / "metadata.csv")
-    parser.add_argument("--year",       type=int,  default=None,
-                        help="Only include documents from this year onwards.")
+    parser.add_argument("--split-year", type=int,  default=DEFAULT_SPLIT_YEAR,
+                        help=f"Year threshold dividing early vs. late period "
+                             f"for log-odds keywords (default: {DEFAULT_SPLIT_YEAR}).")
     parser.add_argument("--variety",    type=str,  default=None,
                         help="Filter by dialect variant.")
     parser.add_argument("--stride",     type=int,  default=1)
     parser.add_argument("--offset",     type=int,  default=0)
+    
+    parser.add_argument("--year", type=int, default=None,
+                    help="Only include documents from this year onwards.")
 
     parser.add_argument("--top-n",      type=int,  default=50)
     parser.add_argument("--min-freq",   type=int,  default=5)
@@ -606,25 +614,17 @@ def main():
         print("\n[1/2] Analysing Catalan originals…")
         out_ca = base_dir / "compare" / "ca"
         out_ca.mkdir(parents=True, exist_ok=True)
-
-        stats_ca_tmp = run_analysis(records, "ca", args)
-        tokens_ca    = stats_ca_tmp["lex_total_tokens_raw"]
+        stats_ca = run_analysis(records, "ca", args)
 
         print("\n[2/2] Analysing Spanish translations…")
         out_es = base_dir / "compare" / "es"
         out_es.mkdir(parents=True, exist_ok=True)
+        stats_es = run_analysis(records, "es", args)
 
-        stats_es_tmp = run_analysis(records, "es", args)
-        tokens_es    = stats_es_tmp["lex_total_tokens_raw"]
+        tokens_ca = stats_ca["lex_total_tokens_raw"]
+        tokens_es = stats_es["lex_total_tokens_raw"]
 
-        print("\nRecomputing cross-language keywords (CA vs ES)…")
-        kw_ca_vs_es = compute_log_odds_keywords(tokens_ca, tokens_es, min_freq=args.min_freq)
-
-        stats_ca = {**stats_ca_tmp, "keywords": kw_ca_vs_es,
-                    "kw_label_a": "Catalan", "kw_label_b": "Spanish"}
-        stats_es = {**stats_es_tmp, "keywords": kw_ca_vs_es,
-                    "kw_label_a": "Catalan", "kw_label_b": "Spanish"}
-
+        # save per-language outputs (keywords already early vs late per language)
         def save_compare_outputs(stats_ca, stats_es):
             grouped_ca = {
                 **{f"[decade]  {k}": v for k, v in stats_ca["lex_decade"].items()},
@@ -654,7 +654,8 @@ def main():
                 stats["keywords"], args.top_n,
                 out_dir / "keywords_log_odds.txt",
                 args=args,
-                label_a="Catalan", label_b="Spanish",
+                label_a=stats["kw_label_a"],
+                label_b=stats["kw_label_b"],
             )
             write_unigram_freq(stats["unigrams"], args.top_n,
                                out_dir / "unigrams_freq.txt", args)
@@ -671,8 +672,8 @@ def main():
         out_cmp = base_dir / "compare"
         write_comparative_txt(
             records,
-            stats_ca["lex_decade"],   stats_es["lex_decade"],
-            tokens_ca,                tokens_es,
+            stats_ca["lex_decade"], stats_es["lex_decade"],
+            tokens_ca,              tokens_es,
             args.top_n,
             out_cmp / "comparative_summary.txt",
             args,

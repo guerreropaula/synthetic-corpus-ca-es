@@ -1,0 +1,123 @@
+
+============================================================
+  Bigrams by Group
+============================================================
+CORPUS RUN INFO
+
+date       : 2026-04-23 20:22:01.068132
+lang       : es
+compare    : True
+split_year : <1920 (early)  vs  >=1920 (late)
+variety    : None
+top_n      : 50
+min_freq   : 50
+
+  --- baleàric ---
+  tal vez                                            5
+  mejor dicho                                        5
+  nuestra lengua                                     5
+  amor propio                                        4
+  pecar lengua                                       4
+  buen mot                                           4
+  espíritu humano                                    4
+  esos espíritus                                     4
+  quién duda                                         4
+  segundo nacimiento                                 3
+  pan agua                                           3
+  tantas veces                                       3
+  nombre dios                                        3
+  alguna vez                                         3
+  largo camino                                       3
+  nuestro favor                                      3
+  opinión pública                                    3
+  liga buen                                          3
+  lenguaje obsceno                                   3
+  dos mundos                                         3
+
+  --- central ---
+  mismo tiempo                                       217
+  maría gloria                                       215
+  rey rodolfo                                        204
+  todas partes                                       187
+  don pedro                                          185
+  jordi dandin                                       183
+  día siguiente                                      166
+  conde orlof                                        163
+  había sido                                         160
+  quién sabe                                         159
+  voz baja                                           143
+  nunca había                                        129
+  aquel hombre                                       127
+  tomás bajalta                                      122
+  don modesto                                        116
+  señor josep                                        114
+  había visto                                        113
+  hijos israel                                       111
+  príncipe demetrio                                  111
+  tal vez                                            109
+
+  --- nord-occidental ---
+  doña ramona                                        41
+  señor hamlet                                       38
+  doña maría                                         31
+  nunca había                                        30
+  rosencrantz guildenstern                           23
+  quién sabe                                         22
+  señor tusquella                                    18
+  dos hermanas                                       17
+  había hecho                                        16
+  tal vez                                            16
+  día siguiente                                      14
+  había visto                                        14
+  santa maría                                        13
+  buenas noches                                      13
+  rey reina                                          13
+  buen señor                                         13
+  aquella noche                                      12
+  ocho años                                          11
+  darse cuenta                                       11
+  hamlet pues                                        11
+
+  --- septentrional ---
+  san pedro                                          74
+  san roque                                          53
+  nuestro señor                                      26
+  señor rector                                       26
+  joan valent                                        24
+  quién sabe                                         23
+  buen hombre                                        21
+  diez años                                          17
+  virgen maría                                       14
+  agua bendita                                       12
+  delante puerta                                     12
+  dueño casa                                         12
+  calle francia                                      12
+  pobres almas                                       11
+  juan valentín                                      11
+  joven pastora                                      10
+  día siguiente                                      9
+  todas partes                                       9
+  había visto                                        9
+  aquella casa                                       9
+
+  --- valencià ---
+  san roque                                          22
+  quién sabe                                         16
+  niño jesús                                         16
+  maestro domingo                                    15
+  señor batiste                                      15
+  aquel hombre                                       14
+  vamos vamos                                        10
+  allí estaba                                        10
+  toda familia                                       9
+  tras haber                                         9
+  san josé                                           9
+  pobre hombre                                       9
+  san miguel                                         8
+  virgen lledó                                       7
+  sabe cómo                                          7
+  darse cuenta                                       7
+  fin cabo                                           7
+  puerta casa                                        7
+  hace falta                                         7
+  falta decir                                        7

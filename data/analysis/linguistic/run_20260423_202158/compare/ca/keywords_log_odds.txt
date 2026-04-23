@@ -1,0 +1,117 @@
+CORPUS RUN INFO
+
+date       : 2026-04-23 20:22:00.928088
+lang       : es
+compare    : True
+split_year : <1920 (early)  vs  >=1920 (late)
+variety    : None
+top_n      : 50
+min_freq   : 50
+
+
+============================================================
+  Keywords: Log-Odds Ratio (period comparison)
+============================================================
+  >> Distinctive of early (<1920) (positive log-odds)
+  havía                            7.8372
+  perque                           7.0739
+  séu                              6.9544
+  gladys                           6.8746
+  may                              6.7880
+  tenía                            6.7298
+  rès                              6.7208
+  enriqueta                        6.6680
+  maría                            6.6156
+  vareig                           6.6021
+  nataniel                         6.5987
+  donchs                           6.5953
+  axò                              6.5604
+  nicéfor                          6.5316
+  hont                             6.5057
+  feya                             6.3255
+  rodolf                           6.3210
+  demetri                          6.3028
+  orlof                            6.2116
+  andrónica                        6.2065
+  avuy                             6.1600
+  poch                             6.1494
+  día                              6.1167
+  mólt                             6.1000
+  tarregada                        6.0481
+  heráclias                        6.0362
+  devant                           5.9933
+  séus                             5.9808
+  ahont                            5.9744
+  tinch                            5.9017
+  xich                             5.8810
+  havíen                           5.8598
+  deya                             5.8454
+  hauría                           5.8159
+  axís                             5.7933
+  mariàngela                       5.7221
+  mès                              5.6185
+  lloch                            5.6094
+  quín                             5.6002
+  païsatge                         5.5624
+  puch                             5.5232
+  aqui                             5.5030
+  sanch                            5.4719
+  fineta                           5.4506
+  còs                              5.4398
+  mitj                             5.4398
+  dadatta                          5.4288
+  aygua                            5.4288
+  quína                            5.4178
+  dorman                           5.3953
+
+  >> Distinctive of late (≥1920) (negative log-odds)
+  innocenci                       -7.2203
+  aspriu                          -7.0096
+  hàmlet                          -6.4148
+  ernestina                       -6.3499
+  eugènia                         -6.1696
+  bajalta                         -6.1039
+  júlia                           -5.9985
+  lluïsa                          -5.9028
+  sirus                           -5.8581
+  cremes                          -5.7723
+  merceneta                       -5.7107
+  dandin                          -5.7054
+  rain                            -5.5869
+  temme                           -5.5123
+  sòcrates                        -5.4795
+  sotenville                      -5.4033
+  anna                            -5.2395
+  garcia                          -5.2310
+  clitifó                         -5.2224
+  tanmateix                       -5.2224
+  polònius                        -5.1962
+  aaró                            -5.1783
+  raina                           -5.1601
+  prendre                         -5.1416
+  virgínia                        -5.1322
+  sòc                             -5.1227
+  pina                            -5.1227
+  menedem                         -5.1132
+  cambó                           -5.0937
+  angèlica                        -5.0639
+  cassanella                      -5.0639
+  vore                            -5.0537
+  serg                            -5.0435
+  agneta                          -5.0435
+  màxi                            -5.0013
+  filàntrop                       -4.9231
+  blun                            -4.9114
+  laertes                         -4.8876
+  virg                            -4.8632
+  petk                            -4.8382
+  clínia                          -4.8382
+  mòni                            -4.8254
+  madalena                        -4.8254
+  lucr                            -4.8125
+  cate                            -4.8125
+  louka                           -4.7994
+  pigmalió                        -4.7994
+  louk                            -4.7862
+  lubin                           -4.7728
+  atenesos                        -4.7728

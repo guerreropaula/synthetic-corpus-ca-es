@@ -1,0 +1,117 @@
+CORPUS RUN INFO
+
+date       : 2026-04-23 20:22:01.013104
+lang       : es
+compare    : True
+split_year : <1920 (early)  vs  >=1920 (late)
+variety    : None
+top_n      : 50
+min_freq   : 50
+
+
+============================================================
+  Keywords: Log-Odds Ratio (period comparison)
+============================================================
+  >> Distinctive of early (<1920) (positive log-odds)
+  gladys                           6.8716
+  enriqueta                        6.6907
+  nataniel                         6.6039
+  rodolfo                          6.3514
+  orlof                            6.2324
+  andrónica                        6.2069
+  tarregada                        6.1032
+  nicéforo                         5.9480
+  demetrio                         5.9345
+  heráclias                        5.7723
+  mariángela                       5.5083
+  niceforo                         5.4657
+  fineta                           5.4437
+  josafat                          5.3689
+  xaneta                           5.3506
+  dadatta                          5.2877
+  paca                             5.2877
+  demetri                          5.1923
+  esaú                             5.1779
+  abad                             5.1561
+  alexis                           5.1027
+  cigaleta                         5.1027
+  morelli                          5.0869
+  labán                            5.0709
+  joaneta                          5.0709
+  comendatore                      5.0381
+  saloma                           5.0381
+  livani                           4.9691
+  celoni                           4.9141
+  abram                            4.8950
+  sara                             4.8756
+  talarn                           4.8756
+  arlet                            4.8558
+  genís                            4.5548
+  blai                             4.4251
+  lluís                            3.9644
+  pedro                            3.6624
+  canaán                           3.0640
+  pintura                          3.0460
+  campanero                        2.9808
+  jacob                            2.9539
+  emperador                        2.8156
+  coronel                          2.7592
+  luis                             2.7358
+  abraham                          2.6712
+  josé                             2.6625
+  josep                            2.6335
+  barón                            2.5814
+  isaac                            2.5714
+  carbonero                        2.5193
+
+  >> Distinctive of late (≥1920) (negative log-odds)
+  aspriu                          -6.9241
+  innocenci                       -6.6898
+  ernestina                       -6.3239
+  inocencio                       -6.0992
+  bajalta                         -6.0780
+  merceneta                       -5.6848
+  dandin                          -5.6742
+  temme                           -5.4864
+  sirus                           -5.4734
+  júlia                           -5.4536
+  sotenville                      -5.3774
+  anna                            -5.2136
+  polonio                         -5.1614
+  pina                            -5.1063
+  raina                           -5.0776
+  julia                           -5.0678
+  cambó                           -5.0678
+  angélica                        -4.9967
+  cassanella                      -4.9861
+  virginia                        -4.8495
+  serg                            -4.8373
+  agneta                          -4.8373
+  laertes                         -4.8248
+  filántropo                      -4.7995
+  louka                           -4.7735
+  rosencrantz                     -4.7333
+  sócrates                        -4.7196
+  lubin                           -4.6769
+  louk                            -4.6475
+  máxi                            -4.6324
+  clitifo                         -4.5537
+  pellini                         -4.5537
+  guildenstern                    -4.5371
+  eugenia                         -4.5204
+  bluntschli                      -4.5032
+  marcel                          -4.4681
+  aarón                           -4.4502
+  democracia                      -4.4501
+  cremes                          -4.4501
+  guerxo                          -4.4501
+  úrsula                          -4.4317
+  petk                            -4.4131
+  hamlet                          -4.2775
+  born                            -4.0537
+  pons                            -3.9981
+  moisés                          -3.9206
+  maria                           -3.7571
+  bru                             -3.7386
+  tabernáculo                     -3.4992
+  pepe                            -3.4449
