@@ -2,7 +2,7 @@
 <OBRA id="60">
 <AUTOR>Burguet i Codoñer, Joan Baptista</AUTOR>
 <TÍTOL>¿Ahon está el lladre?</TÍTOL>
-<ANY>1880</ANY>
+<ANY>1912</ANY>
 <CLASSIFICACIÓ_TEXTUAL llengua="LIT" gènere="T" tema="" subtema="" traducció="no" variant="valencià" />
 </OBRA>
 <TEXT>¿Ahon está el lladre? Trenca-caps bilingüe en un acte orichinal y en vers

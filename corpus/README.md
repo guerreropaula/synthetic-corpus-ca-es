@@ -1,14 +1,14 @@
 # Corpus Overview
 
 This directory contains the final parallel (ca-es) literary corpus and its associated metadata, which constitute the main contribution of this work.
-It comprises **63 literary texts** (1,577,899 Catalan words; 1,669,795 Spanish words; 30,289 aligned paragraph pairs) within five dialectal variants of Catalan. The target translations have been performed using Google's TranslateGemma-27B IT.
+It comprises **64 literary texts** (1,577,899 Catalan words; 1,669,795 Spanish words; 30,289 aligned paragraph pairs) within five dialectal variants of Catalan. The target translations have been performed using Google's TranslateGemma-27B IT.
 
 
 ## Corpus Composition
 
 | Property | Value |
 |---|---|
-| Documents | 63 |
+| Documents | 64 |
 | Publication range | 1905-1948 |
 | Catalan words | 1,582,915 |
 | Spanish words | 1,674,696 |
@@ -41,7 +41,7 @@ Document-level corpus. Each line is a JSON object containing the complete text o
 ---
 
 ### metadata_filtered.csv
-Filtered version of the metadata, restricted to the 63 documents present in the final aligned corpus. Produced by `03_build_corpus.py`. This file serves as the definitive registry of documents included in the corpus.
+Filtered version of the metadata, restricted to the 64 documents present in the final aligned corpus. Produced by `03_build_corpus.py`. This file serves as the definitive registry of documents included in the corpus.
 
 Columns are identical to `data/raw/metadata.csv`:
 
