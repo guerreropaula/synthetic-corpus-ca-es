@@ -19,9 +19,9 @@ contains 63 documents (1,582,915 Catalan words; 1,674,696 Spanish words; 30,290 
 paragraph pairs) published between 1905 and 1948 and spans five dialectal variants of Cata-
 lan. The results shed light on the translation behavior of a large language model in literary
 prose: higher hapax rates in Catalan than in Spanish, broadly comparable MATTR scores
-across languages, a mild lexical normalization relative to the Catalan source texts, and a
-slight tendency for translations to be longer than the source texts, while preserving many
-named entities and cultural references.
+across languages, a mild lexical normalization relative to the Catalan source texts regarding
+diachronic forms, and a slight tendency for translations to be longer, while preserving many
+named entities.
 
 
 

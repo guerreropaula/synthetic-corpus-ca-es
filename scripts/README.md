@@ -92,7 +92,7 @@ in both single-language  and comparative mode. Minimum frequency threshold: `--m
 ```bash
 # Single-language analysis
 python scripts/05_linguistics_analysis.py --lang ca            # Catalan
-python scripts/05_linguistics_analysis.py --lang es            # Spanish (default)
+python scripts/05_linguistics_analysis.py --lang es            # Spanish
 python scripts/05_linguistics_analysis.py --lang ca --year 1905 --top-n 50
 
 # Comparative analysis (CA vs. ES)
@@ -106,11 +106,11 @@ python scripts/05_linguistics_analysis.py --variety central --min-freq 5
 ---
 
 ## Execution Order
-The commands below must be executed in order with the specified arguments to reproduce the obtained corpus.
+The commands below must be executed in order with the specified arguments to reproduce the obtained results.
 ```bash
 python 01_load_texts.py
 python 02_translate_ca_es.py
 python 03_build_corpus.py
 python 04_analyze_corpus.py --year 1905 --only-processed
-python 05_linguistics_analysis.py --compare
+python 05_linguistics_analysis.py --compare --year 1905 --min-freq 50
 ```
