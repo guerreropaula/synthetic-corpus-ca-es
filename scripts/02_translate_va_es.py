@@ -191,7 +191,6 @@ def translate_file(doc_id: str, processor, model, resume: bool = False):
                 out_f.flush()
                 translations.append(translated)
 
-                # print first 3 paragraphs to stdout as they arrive
                 idx = len(translations) - 1
                 if idx < 3:
                     print(f"\n--- paragraph {idx + 1} ---\n{translated}\n")

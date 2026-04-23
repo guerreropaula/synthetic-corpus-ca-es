@@ -73,7 +73,6 @@ def parse_file(path: Path) -> dict | None:
 
     obra_id = extract_obra_id(raw)
     author  = extract_tag(raw, "AUTOR")
-    # Handle accented tag name TÍTOL / TITOL
     title   = extract_tag(raw, "TÍTOL") or extract_tag(raw, "TITOL")
     year    = extract_tag(raw, "ANY")
     lang      = extract_attr(raw, "CLASSIFICACIÓ_TEXTUAL", "llengua") or "va"
@@ -130,7 +129,6 @@ def main(input_dir: Path) -> None:
             if parsed is None:
                 continue
 
-            # Build a zero-padded doc_id from the obra_id 
             obra_id = parsed["obra_id"] or str(i)
             doc_id  = f"doc_{int(obra_id):06d}" if obra_id.isdigit() else f"doc_{i:06d}"
 

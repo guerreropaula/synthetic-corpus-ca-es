@@ -55,7 +55,7 @@ PROCESSED_DIR     = Path(__file__).parent.parent / "data" / "processed"
 ANALYSIS_ROOT_DIR = Path(__file__).parent.parent / "data" / "analysis"
 ANALYSIS_DIR      = ANALYSIS_ROOT_DIR / "linguistic"
 
-DEFAULT_SPLIT_YEAR = 1920   # midpoint of corpus range 1905–1948
+DEFAULT_SPLIT_YEAR = 1920   
 
 
 STOPWORDS_ES = {
@@ -624,7 +624,6 @@ def main():
         tokens_ca = stats_ca["lex_total_tokens_raw"]
         tokens_es = stats_es["lex_total_tokens_raw"]
 
-        # save per-language outputs (keywords already early vs late per language)
         def save_compare_outputs(stats_ca, stats_es):
             grouped_ca = {
                 **{f"[decade]  {k}": v for k, v in stats_ca["lex_decade"].items()},
