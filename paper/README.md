@@ -7,13 +7,21 @@ This respository contains the paper *“Building a Synthetic Parallel Catalan–
 ## Abstract
 
 
-This paper describes the design and implementation of a parallel corpus of early
-twentieth-century Catalan literary texts and their automatic Spanish translations. Starting
-from XML-embedded plain-text documents sourced from the Corpus Textual Informatitzat
-de la Llengua Catalana (CTILC), we built a five-script pipeline that (1) loads and normalizes
-the raw texts, (2) translates them from Catalan into Spanish using Google’s Gemma-27B-IT,
-(3) preprocesses and builds a paragraph-level bilingual corpus, (4) analyzes the distribution
-of the resulting corpus, and finally (5) performs a comparative linguistic analysis covering keyword extraction, n-gram frequencies, and lexical richness metrics. The resulting corpus contains 63 documents (1,577,899 Catalan words; 1,669,666 Spanish words; 30,031 aligned paragraph pairs) published between 1905 and 1948 and spans five dialectal variants of Catalan. The comparative analysis reveals systematic lexical divergences between the source language and its translations, offering a quantitative window onto the linguistic distance between Catalan and Spanish as well as the translation behavior of a large language model on literary prose.
+This paper describes the design and analysis of a synthetic parallel corpus of
+Catalan literary texts and their automatic Spanish translations. Starting from plain-text
+documents containing XML tags retrieved from the Corpus Textual Informatitzat de la
+Llengua Catalana (CTILC), we built a five-script pipeline that (1) loads and normalizes the
+raw texts, (2) translates them from Catalan into Spanish using Google’s Gemma-27B-IT,
+(3) postprocesses and builds a paragraph-level bilingual corpus, (4) analyzes the distribution
+of the resulting corpus, and finally (5) performs a comparative linguistic analysis covering
+keyword extraction, n-gram frequencies, and lexical richness metrics. The resulting corpus
+contains 63 documents (1,582,915 Catalan words; 1,674,696 Spanish words; 30,290 aligned
+paragraph pairs) published between 1905 and 1948 and spans five dialectal variants of Cata-
+lan. The results shed light on the translation behavior of a large language model in literary
+prose: higher hapax rates in Catalan than in Spanish, broadly comparable MATTR scores
+across languages, a mild lexical normalization relative to the Catalan source texts, and a
+slight tendency for translations to be longer than the source texts, while preserving many
+named entities and cultural references.
 
 
 

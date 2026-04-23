@@ -10,9 +10,9 @@ It comprises **63 literary texts** (1,577,899 Catalan words; 1,669,795 Spanish w
 |---|---|
 | Documents | 63 |
 | Publication range | 1905-1948 |
-| Catalan words | 1,577,899 |
-| Spanish wors | 1,669,795 |
-| Aligned paragraph pairs | 30,289 |
+| Catalan words | 1,582,915 |
+| Spanish words | 1,674,696 |
+| Aligned paragraph pairs | 30,290 |
 | Mean paragraphs per document | 476.7 (median: 395) |
 | Dialectal variants | central (56), baleàric (3), nord-occidental (2), valencià (1), septentrional (1) |
 | Original Catalan texts | 54 |
