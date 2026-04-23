@@ -1,0 +1,123 @@
+
+============================================================
+  Bigrams by Group
+============================================================
+CORPUS RUN INFO
+
+date: 2026-04-23 18:58:57.868553
+lang: es
+compare: True
+year: 1905
+variety: None
+top_n: 50
+min_freq: 5
+
+  --- 1900s ---
+  sant pere                                          81
+  sant roch                                          63
+  mare deu                                           47
+  joan valent                                        43
+  nostre senyor                                      41
+  pare joan                                          40
+  senyor rector                                      35
+  bon home                                           28
+  havia fet                                          27
+  bon punt                                           25
+  aquell home                                        24
+  sant domingo                                       23
+  aquella hora                                       23
+  cal dir                                            22
+  tota mena                                          21
+  sant antoni                                        21
+  deu anys                                           20
+  den josafat                                        20
+  alguna cosa                                        20
+  pot esse                                           20
+
+  --- 1910s ---
+  maría gloria                                       215
+  rey rodolf                                         206
+  don pere                                           190
+  comte orlof                                        165
+  príncep demetri                                    158
+  senyor josep                                       131
+  don modest                                         128
+  tan sols                                           101
+  donya maria                                        89
+  senyor pere                                        85
+  senyora paca                                       73
+  comendatore morelli                                63
+  vol dir                                            57
+  sant celoni                                        52
+  coronel talarn                                     50
+  aquesta casa                                       44
+  sos ulls                                           43
+  vaig veure                                         43
+  alguna cosa                                        43
+  posà nom                                           41
+
+  --- 1920s ---
+  tomàs bajalta                                      138
+  hereu escampa                                      137
+  fills israel                                       122
+  mon senyor                                         87
+  alguna cosa                                        83
+  vet aquí                                           72
+  havia fet                                          72
+  terra egipte                                       59
+  senyora rosa                                       56
+  vol dir                                            50
+  tal volta                                          47
+  jahvè moisès                                       46
+  havia estat                                        45
+  senyora remei                                      45
+  aquestes coses                                     44
+  tal vegada                                         42
+  heus aquí                                          42
+  tota mena                                          41
+  tan sols                                           40
+  donya ramona                                       40
+
+  --- 1930s ---
+  jordi dandin                                       186
+  senyor sotenville                                  90
+  senyor marcel·lí                                   60
+  hereu aspriu                                       56
+  senyora mònica                                     47
+  senyora sotenville                                 40
+  tota mena                                          38
+  alguna cosa                                        37
+  havia fet                                          33
+  mare déu                                           32
+  havia estat                                        30
+  mai havia                                          30
+  cal pobric                                         30
+  sant roc                                           28
+  cal dir                                            27
+  després haver                                      26
+  jove aspriu                                        25
+  innocenci havia                                    23
+  pot ésser                                          22
+  havien fet                                         22
+
+  --- 1940s ---
+  pau garcia                                         112
+  anna maria                                         112
+  fra job                                            40
+  havia estat                                        39
+  bell nou                                           27
+  havia fet                                          25
+  innocenci aspriu                                   20
+  heus aquí                                          20
+  havia anat                                         19
+  tota mena                                          19
+  senyor babarotes                                   18
+  doctor pladevall                                   17
+  aspriu havia                                       15
+  vet aquí                                           15
+  havia vist                                         15
+  alguna cosa                                        15
+  democràcia catalana                                14
+  mai havia                                          13
+  sant pau                                           13
+  després haver                                      12
