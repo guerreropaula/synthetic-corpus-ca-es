@@ -78,7 +78,8 @@ Performs corpus-linguistic analysis. Supports three modes: single-language Catal
 
 **Analyses:**
 - **Unigram and bigram frequencies** — top-N after stopword removal; broken down by decade and dialectal variant.
-- **Log-odds keyword extraction** — contrasts Catalan vs. Spanish (comparative mode) or earliest vs. latest decade (single-language mode). Minimum frequency threshold: `--min-freq` (default: 5).
+- **Log-odds extraction** — contrasts texts published before 1920 against those published from 1920 onwards, 
+in both single-language  and comparative mode. Minimum frequency threshold: `--min-freq` (default: 50).
 - **Lexical richness** — Type-Token Ratio (TTR), Moving-Average TTR (MATTR, 100-token windows), and hapax legomena counts and percentages; computed by decade and variant.
 - **Comparative metrics** (--compare only) — vocabulary overlap, per-document ES/CA length ratios, decade-level TTR and MATTR divergence.
 

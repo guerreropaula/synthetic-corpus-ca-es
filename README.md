@@ -6,7 +6,7 @@ Author: **Paula Guerrero Castelló**
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)](paper/paper.pdf)
 [![Corpus](https://img.shields.io/badge/Synthetic%20Corpus-CA%2FES-blue)](corpus/corpus_ca_es.csv)
 
-This repository contains the code and methodology for creating, processing, and analyzing a synthetic parallel bilingual corpus (ca-es). The corpus comprises 63 literary documents (totaling ∼1,6 million words) published between 1905 and 1948, translated using an LLM (Gemma-27B-IT).
+This repository contains the code and methodology for creating, processing, and analyzing a synthetic parallel bilingual corpus (ca-es). The corpus comprises 63 literary documents (totaling ∼1,6 million words) published between 1905 and 1948, translated using an LLM (Gemma-3-27b-IT).
 
 The corpus is intended as a data augmentation resource for training or fine-tuning MT systems.
 
@@ -15,12 +15,12 @@ The corpus is intended as a data augmentation resource for training or fine-tuni
 | Property | Value |
 |---|---|
 | Documents | 63 |
-| Catalan words | 1,577,899 |
-| Spanish words | 1,669,666 |
-| Aligned paragraph pairs | 30,031 |
+| Catalan words | 1,582,915 |
+| Spanish words | 1,674,696 |
+| Aligned paragraph pairs | 30,290 |
 | Publication range | 1905-1948 |
 | Dialectal variants | 5 (central, valencià, nord-occidental, baleàric, septentrional) |
-| Translation system | Gemma-27B-IT |
+| Translation system | Gemma3-27B-IT |
 
 ## Pipeline Overview
 
@@ -30,7 +30,7 @@ The pipeline consists of six numbered scripts executed in sequence:
 2. **02_translate_ca_es.py** — Translates each document paragraph by paragraph from Catalan to Spanish using Gemma-27B-IT.
 3. **03_build_corpus.py** — Removes MT prompt artefacts, aligns source and translation at paragraph level, writes the corpus files. Filters `metadata.csv` to retain only documents included in the final aligned corpus.
 4. **04_analyze_corpus.py** — Computes corpus distribution statistics (temporal, variant, author, word counts) and outputs figures.
-5. **05_linguistics_analysis.py** — Performs linguistic analysis: unigram/bigram frequencies, log-odds keyword extraction, and lexical richness metrics (TTR, MATTR, hapax legomena).
+5. **05_linguistics_analysis.py** — Performs linguistic analysis: unigram/bigram frequencies, log-odds extraction, and lexical richness metrics (TTR, MATTR, hapax legomena).
 
 See `scripts/README.md` for usage instructions and `data/README.md` for a full description of inputs and outputs.
 
