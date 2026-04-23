@@ -1,7 +1,6 @@
 doc_id,obra_id,author,title,year,lang,traduccio,variant,source_file,n_paragraphs
 doc_000030,30,"Bertrana, Prudenci",Les ales d'Ernestina,1921,LIT,no,central,000030_Les_ales_d_Ernestina.out.txt,665
 doc_000041,41,"Alcover, Joan",Poemes bíblics,1918,LIT,no,baleàric,000041_Poemes_biblics.out.txt,158
-doc_000060,60,"Burguet i Codoñer, Joan Baptista",¿Ahon está el lladre?,1880,LIT,no,valencià,000060_Ahon_esta_el_lladre.out.txt,258
 doc_000092,92,"Bofill i Mates, Jaume",L'altra concòrdia,1930,LIT,no,central,000092_L_altra_concordia.out.txt,205
 doc_000093,93,"Rusiñol, Santiago",En Josepet de Sant Celoni,1917,LIT,no,central,000093_En_Josepet_de_Sant_Celoni.out.txt,567
 doc_000098,98,"Rusiñol, Santiago",L'illa de la calma,1922,LIT,no,central,000098_L_illa_de_la_calma.out.txt,807
