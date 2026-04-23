@@ -15,14 +15,13 @@ raw texts, (2) translates them from Catalan into Spanish using Google’s Gemma-
 (3) postprocesses and builds a paragraph-level bilingual corpus, (4) analyzes the distribution
 of the resulting corpus, and finally (5) performs a comparative linguistic analysis covering
 keyword extraction, n-gram frequencies, and lexical richness metrics. The resulting corpus
-contains 64 documents (1,582,915 Catalan words; 1,674,696 Spanish words; 30,290 aligned
+contains 63 documents (1,577,899 Catalan words; 1,669,666 Spanish words; 30,032 aligned
 paragraph pairs) published between 1905 and 1948 and spans five dialectal variants of Cata-
 lan. The results shed light on the translation behavior of a large language model in literary
 prose: higher hapax rates in Catalan than in Spanish, broadly comparable MATTR scores
 across languages, a mild lexical normalization relative to the Catalan source texts regarding
 diachronic forms, and a slight tendency for translations to be longer, while preserving many
 named entities.
-
 
 
 ## Keywords

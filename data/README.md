@@ -7,8 +7,8 @@ This directory holds all input and output data produced throughout the entire co
 ```
 data/
 ├── corpus_ctilc/          # Input: raw CTILC source files (384 files)
-├── raw/                   # Stage 1 output: extracted plain-text documents in Catalan (64 files)
-├── processed/             # Stage 2 output: Spanish translations (64 files)
+├── raw/                   # Stage 1 output: extracted plain-text documents in Catalan (63 files)
+├── processed/             # Stage 2 output: Spanish translations (63 files)
 └── analysis/
     ├── general/           # Stage 4 output: corpus distribution statistics
     └── linguistic/        # Stage 5 output: linguistic analysis results
