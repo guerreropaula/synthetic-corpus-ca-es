@@ -1,7 +1,7 @@
 """
 02_translate_va_es.py
 ---------------------
-Translates raw Catalan paragraphs into Spanish using Gemma 4 27B IT
+Translates raw Catalan paragraphs into Spanish using Gemma 3 27B IT
 
 Usage:
     python 02_translate_va_es.py                  # translate all docs
@@ -28,7 +28,7 @@ import pandas as pd
 RAW_DIR       = Path(__file__).parent.parent / "data" / "raw"
 PROCESSED_DIR = Path(__file__).parent.parent / "data" / "processed"
 
-MODEL_ID       = "google/translategemma-27b-it"
+MODEL_ID       = "google/gemma-3-27b-it"
 BATCH_SIZE     = 12
 MAX_NEW_TOKENS = 512
 MIN_PARA_LEN   = 10
