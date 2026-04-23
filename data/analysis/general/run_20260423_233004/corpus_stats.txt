@@ -10,8 +10,6 @@ EXECUTIVE SUMMARY
 - The translation profile is led by Original (54, 85.7%).
 
 - Parallel Corpus (corpus_ca_es.csv): 30,032 aligned pairs.
-  • Catalan: 0 words
-  • Spanish: 0 words
 
 ==============================================================================
 RUN CONFIGURATION
