@@ -1,8 +1,8 @@
-================================================================================
-CODE LICENSE — MIT License
-================================================================================
+LICENSES
+--------
 
-Copyright (c) 2025 Paula Guerrero Castelló
+Code (scripts/)
+MIT License — Copyright (c) 2025 Paula Guerrero Castelló
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -23,26 +23,17 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-================================================================================
-CORPUS DATA LICENSE — Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)
-================================================================================
+Corpus data (corpus/)
+CC BY-NC 4.0 — Copyright (c) 2025 Paula Guerrero Castelló
+https://creativecommons.org/licenses/by-nc/4.0/
 
-Copyright (c) 2025 Paula Guerrero Castelló
-
-The corpus data in this repository (Catalan source texts and Spanish 
-translations) is licensed under CC BY-NC 4.0.
-Full license: https://creativecommons.org/licenses/by-nc/4.0/
-
-ATTRIBUTION REQUIREMENT
------------------------
 The source Catalan texts were digitized and processed by the Institut
 d'Estudis Catalans as part of the Corpus Textual Informatitzat de la
-Llengua Catalana (CTILC). Any use of these texts must include:
+Llengua Catalana (CTILC). Any use must include the attribution:
 
-  "Aquest text ha estat digitalitzat i processat per l'Institut 
-  d'Estudis Catalans, com a part del projecte Corpus Textual 
+  "Aquest text ha estat digitalitzat i processat per l'Institut
+  d'Estudis Catalans, com a part del projecte Corpus Textual
   Informatitzat de la Llengua Catalana."
 
-The Spanish translations were automatically generated from the above
-sources using Google's Gemma3-27B-IT and are released under the same
-CC BY-NC 4.0 license.
+The Spanish translations were automatically generated using
+Google's Gemma3-27B-IT and are released under the same CC BY-NC 4.0 license.
