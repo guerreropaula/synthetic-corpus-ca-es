@@ -295,10 +295,6 @@ def fmt_section(title, lines):
     return "\n".join(["", bar, f"  {title}", bar] + lines)
 
 
-def write_collocations(pmi_items, top_n, out_path, args=None):
-    pass
-
-
 def write_keywords(scored, top_n, out_path, args, label_a, label_b):
     top_a = [(w, s) for w, s in scored if s > 0][:top_n]
     top_b = [(w, s) for w, s in scored if s < 0][:top_n]
@@ -351,10 +347,6 @@ def write_bigram_freq_tsv(bigram_freq, top_n, out_path, args=None):
         ],
     ))
     out_path.write_text("\n".join(lines), encoding="utf-8")
-
-
-def write_ngram_freq(counter, n, top_n, out_path, args=None):
-    pass
 
 
 def write_ngram_by_group(group_counters, n, top_n, out_path, args=None):
@@ -511,8 +503,6 @@ def run_analysis(records, lang, args, split_year=None):
         "lex_variant":         lex_variant,
         "lex_total":           lex_total,
         "lex_total_tokens_raw": all_tokens_clean,
-        "dec_keys":            sorted(decade_tokens.keys()),
-        "decade_tokens":       decade_tokens,
     }
 
 

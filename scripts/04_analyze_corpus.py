@@ -11,11 +11,11 @@ Produces:
     data/analysis/general/run_<stamp>/figures/             — individual PNG charts 
 
 Usage:
-    python scripts/03_analyze_corpus.py
-    python scripts/03_analyze_corpus.py --csv data/raw/metadata.csv # specify custom metadata path
-    python scripts/03_analyze_corpus.py --year 1920  # filter by minimum year
-    python scripts/03_analyze_corpus.py --variant valencia  # filter by variety (e.g. valencia, central, nord-occidental, balearic) 
-    python scripts/03_analyze_corpus.py --only-processed  # keep only documents that exist in data/processed/
+    python scripts/04_analyze_corpus.py
+    python scripts/04_analyze_corpus.py --csv data/raw/metadata.csv # specify custom metadata path
+    python scripts/04_analyze_corpus.py --year 1920  # filter by minimum year
+    python scripts/04_analyze_corpus.py --variant valencia  # filter by variety (e.g. valencia, central, nord-occidental, balearic) 
+    python scripts/04_analyze_corpus.py --only-processed  # keep only documents that exist in data/processed/
 """
 
 from __future__ import annotations
@@ -34,7 +34,6 @@ RAW_DIR       = Path(__file__).parent.parent / "data" / "raw"
 PROCESSED_DIR = Path(__file__).parent.parent / "data" / "processed"
 ANALYSIS_ROOT_DIR = Path(__file__).parent.parent / "data" / "analysis"
 ANALYSIS_DIR  = ANALYSIS_ROOT_DIR / "general"
-FIGURES_DIR   = ANALYSIS_DIR / "figures"
 CORPUS_DIR    = Path(__file__).parent.parent / "corpus"
 
 def load_metadata(csv_path: Path) -> list[dict]:

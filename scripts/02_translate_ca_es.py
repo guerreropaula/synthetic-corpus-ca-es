@@ -1,13 +1,13 @@
 """
-02_translate_va_es.py
+02_translate_ca_es.py
 ---------------------
 Translates raw Catalan paragraphs into Spanish using Gemma 3 27B IT
 
 Usage:
-    python 02_translate_va_es.py                  # translate all docs
-    python 02_translate_va_es.py --doc-id book1   # single doc
-    python 02_translate_va_es.py --resume         # skip already-translated docs
-    python 02_translate_va_es.py --batch-size 4   # override batch size
+    python 02_translate_ca_es.py                  # translate all docs
+    python 02_translate_ca_es.py --doc-id book1   # single doc
+    python 02_translate_ca_es.py --resume         # skip already-translated docs
+    python 02_translate_ca_es.py --batch-size 4   # override batch size
 
 Input:
     data/raw/<doc_id>.txt
@@ -21,7 +21,7 @@ import logging
 import sys
 import torch
 from pathlib import Path
-from transformers import AutoProcessor, AutoModelForImageTextToText, BitsAndBytesConfig
+from transformers import AutoProcessor, AutoModelForImageTextToText, BitsAndBytesConfig, Gemma3ForConditionalGeneration
 from tqdm import tqdm
 import pandas as pd
 
@@ -63,6 +63,7 @@ def load_model(model_id: str):
         model = AutoModelForImageTextToText.from_pretrained(
             model_id, quantization_config=bnb_config, device_map="auto", attn_implementation="sdpa"
         )
+        
         log.info("Using SDPA attention.")
     except Exception as e:
         log.warning(f"SDPA unavailable, falling back: {e}")
@@ -133,6 +134,8 @@ def translate_batch(processor, model, paragraphs: list[str]) -> list[str]:
             **inputs,
             max_new_tokens=MAX_NEW_TOKENS,
             do_sample=True,
+            temperature=0.1,
+            top_p=0.9,
             pad_token_id=pad_id,
         )
 
@@ -201,7 +204,7 @@ def translate_file(doc_id: str, processor, model, resume: bool = False):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Translate Valencian texts to Spanish with TranslateGemma 27B.")
+    parser = argparse.ArgumentParser(description="Translate Catalan texts to Spanish with TranslateGemma 27B.")
     parser.add_argument("--doc-id",     type=str, default=None)
     parser.add_argument("--batch-size", type=int, default=BATCH_SIZE)
     parser.add_argument("--resume",     action="store_true")
