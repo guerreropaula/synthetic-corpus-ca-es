@@ -34,7 +34,7 @@ Usage — single language:
     python scripts/05_linguistic_analysis.py --lang ca --top-n 50 --min-freq 5
 
 Usage — comparative:
-    python scripts/05_linguistic_analysis.py --compare
+    python scripts/05_linguistic_analysis.py --compare --min-freq 50
     python scripts/05_linguistic_analysis.py --compare --split-year 1925
     python scripts/05_linguistic_analysis.py --compare --variety central
     python scripts/05_linguistic_analysis.py --compare --top-n 30 --min-freq 10
