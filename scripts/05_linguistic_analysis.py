@@ -1,12 +1,12 @@
 """
-05_linguistics_analysis.py
+05_linguistic_analysis.py
 --------------------------
 Extended corpus linguistics analysis supporting:
   • Original Catalan texts          (data/raw/<doc_id>.txt)
   • Translated Spanish texts        (data/processed/<doc_id>_es.txt)
   • Comparative Catalan ↔ Spanish analysis
 
-Covers: collocations, keywords (log-odds early vs. late period), n-gram frequencies,
+Covers: collocations, log-odds (early vs. late period), n-gram frequencies,
         type-token ratio, lexical richness (overall + per-decade + per-variant),
         and — in comparative mode — cross-language alignment metrics.
 
@@ -17,7 +17,7 @@ Reads:
 
 Produces:
     data/analysis/linguistic/run_<stamp>/<lang|compare>/
-        keywords_log_odds.txt          (early vs late period)
+        log_odds.txt                   (early vs late period)
         unigrams_freq.txt
         bigrams_freq.txt
         ngrams_by_decade.txt
@@ -26,18 +26,18 @@ Produces:
         comparative_summary.txt        (--compare mode only)
 
 Usage — single language:
-    python scripts/05_linguistics_analysis.py                      # Spanish (default)
-    python scripts/05_linguistics_analysis.py --lang ca            # Catalan originals
-    python scripts/05_linguistics_analysis.py --lang es            # Spanish translations
-    python scripts/05_linguistics_analysis.py --lang ca --split-year 1925
-    python scripts/05_linguistics_analysis.py --lang es --variety central
-    python scripts/05_linguistics_analysis.py --lang ca --top-n 50 --min-freq 5
+    python scripts/05_linguistic_analysis.py                      # Spanish (default)
+    python scripts/05_linguistic_analysis.py --lang ca            # Catalan originals
+    python scripts/05_linguistic_analysis.py --lang es            # Spanish translations
+    python scripts/05_linguistic_analysis.py --lang ca --split-year 1925
+    python scripts/05_linguistic_analysis.py --lang es --variety central
+    python scripts/05_linguistic_analysis.py --lang ca --top-n 50 --min-freq 5
 
 Usage — comparative:
-    python scripts/05_linguistics_analysis.py --compare
-    python scripts/05_linguistics_analysis.py --compare --split-year 1925
-    python scripts/05_linguistics_analysis.py --compare --variety central
-    python scripts/05_linguistics_analysis.py --compare --top-n 30 --min-freq 10
+    python scripts/05_linguistic_analysis.py --compare
+    python scripts/05_linguistic_analysis.py --compare --split-year 1925
+    python scripts/05_linguistic_analysis.py --compare --variety central
+    python scripts/05_linguistic_analysis.py --compare --top-n 30 --min-freq 10
 """
 
 import argparse
@@ -307,7 +307,7 @@ def write_keywords(scored, top_n, out_path, args, label_a, label_b):
         lines.append(run_header(args))
         lines.append("")
     lines.append(fmt_section(
-        "Keywords: Log-Odds Ratio (period comparison)",
+        "Log-Odds Ratio (period comparison)",
         [
             f"  >> Distinctive of {label_a} (positive log-odds)",
             *[f"  {w:<30} {s:>8.4f}" for w, s in top_a],
@@ -519,7 +519,7 @@ def run_analysis(records, lang, args, split_year=None):
 def save_single_outputs(stats, lang, out_dir, args):
     write_keywords(
         stats["keywords"], args.top_n,
-        out_dir / "keywords_log_odds.txt",
+        out_dir / "log_odds.txt",
         args=args,
         label_a=stats["kw_label_a"],
         label_b=stats["kw_label_b"],
@@ -651,7 +651,7 @@ def main():
         for stats, out_dir, lang in [(stats_ca, out_ca, "ca"), (stats_es, out_es, "es")]:
             write_keywords(
                 stats["keywords"], args.top_n,
-                out_dir / "keywords_log_odds.txt",
+                out_dir / "log_odds.txt",
                 args=args,
                 label_a=stats["kw_label_a"],
                 label_b=stats["kw_label_b"],

@@ -30,7 +30,7 @@ The pipeline consists of six numbered scripts executed in sequence:
 2. **02_translate_ca_es.py** — Translates each document paragraph by paragraph from Catalan to Spanish using Gemma-27B-IT.
 3. **03_build_corpus.py** — Removes MT prompt artifacts, aligns source and translation at paragraph level, writes the corpus files. Filters `metadata.csv` to retain only documents included in the final aligned corpus.
 4. **04_analyze_corpus.py** — Computes corpus distribution statistics (temporal, variant, author, word counts) and outputs figures.
-5. **05_linguistics_analysis.py** — Performs linguistic analysis: unigram/bigram frequencies, log-odds extraction, and lexical richness metrics (TTR, MATTR, hapax legomena).
+5. **05_linguistic_analysis.py** — Performs linguistic analysis: unigram/bigram frequencies, log-odds extraction, and lexical richness metrics (TTR, MATTR, hapax legomena).
 
 See `scripts/README.md` for usage instructions and `data/README.md` for a full description of inputs and outputs.
 

@@ -11,7 +11,7 @@ This paper describes the design and analysis of a synthetic parallel corpus of
 Catalan literary texts and their automatic Spanish translations. Starting from plain-text
 documents containing XML tags retrieved from the Corpus Textual Informatitzat de la
 Llengua Catalana (CTILC), we built a five-script pipeline that (1) loads and normalizes the
-raw texts, (2) translates them from Catalan into Spanish using Google’s Gemma-27B-IT,
+raw texts, (2) translates them from Catalan into Spanish using Google’s Gemma3-27B-IT,
 (3) postprocesses and builds a paragraph-level bilingual corpus, (4) analyzes the distribution
 of the resulting corpus, and finally (5) performs a comparative linguistic analysis covering
 keyword extraction, n-gram frequencies, and lexical richness metrics. The resulting corpus
@@ -26,7 +26,7 @@ named entities.
 
 ## Keywords
 
-Corpus linguistics · Parallel corpus · Catalan · Spanish · Machine translation · N-grams · Lexical richness
+Corpus linguistics · Parallel corpus · Catalan · Spanish · Machine translation
 
 ---
 ***MSc in Language Analysis and Processing***

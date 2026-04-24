@@ -73,7 +73,7 @@ Computes descriptive corpus statistics from `data/raw/metadata.csv` and the alig
 
 ---
 
-### 05_linguistics_analysis.py
+### 05_linguistic_analysis.py
 Performs corpus-linguistic analysis. Supports three modes: single-language Catalan (`--lang ca`), single-language Spanish (`--lang es`), and comparative (`--compare`).
 
 **Analyses:**
@@ -84,23 +84,23 @@ in both single-language  and comparative mode. Minimum frequency threshold: `--m
 - **Comparative metrics** (--compare only) — vocabulary overlap, per-document ES/CA length ratios, decade-level TTR and MATTR divergence.
 
 **Output:** `data/analysis/linguistic/run_*/`
-- `ca/` and `es/` subdirectories with per-language files: `unigrams_freq.txt`, `bigrams_freq.txt`, `ngrams_by_decade.txt`, `ngrams_by_variant.txt`, `lexical_stats.txt`, `keywords_log_odds.txt`.
+- `ca/` and `es/` subdirectories with per-language files: `unigrams_freq.txt`, `bigrams_freq.txt`, `ngrams_by_decade.txt`, `ngrams_by_variant.txt`, `lexical_stats.txt`, `log_odds.txt`.
 - `compare/comparative_summary.txt` (comparative mode only).
 
 
 **Usage:**
 ```bash
 # Single-language analysis
-python scripts/05_linguistics_analysis.py --lang ca            # Catalan
-python scripts/05_linguistics_analysis.py --lang es            # Spanish
-python scripts/05_linguistics_analysis.py --lang ca --year 1905 --top-n 50
+python scripts/05_linguistic_analysis.py --lang ca            # Catalan
+python scripts/05_linguistic_analysis.py --lang es            # Spanish
+python scripts/05_linguistic_analysis.py --lang ca --year 1905 --top-n 50
 
 # Comparative analysis (CA vs. ES)
-python scripts/05_linguistics_analysis.py --compare
-python scripts/05_linguistics_analysis.py --compare --year 1920 --top-n 30
+python scripts/05_linguistic_analysis.py --compare
+python scripts/05_linguistic_analysis.py --compare --year 1920 --top-n 30
 
 # Other filters
-python scripts/05_linguistics_analysis.py --variety central --min-freq 5
+python scripts/05_linguistic_analysis.py --variety central --min-freq 5
 ```
 
 ---
@@ -112,5 +112,5 @@ python 01_load_texts.py
 python 02_translate_ca_es.py
 python 03_build_corpus.py
 python 04_analyze_corpus.py --year 1905 --only-processed
-python 05_linguistics_analysis.py --compare --year 1905 --min-freq 50
+python 05_linguistic_analysis.py --compare --year 1905 --min-freq 50
 ```
