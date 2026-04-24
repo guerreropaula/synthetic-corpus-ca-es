@@ -112,5 +112,5 @@ python 01_load_texts.py
 python 02_translate_ca_es.py
 python 03_build_corpus.py
 python 04_analyze_corpus.py --year 1905 --only-processed
-python 05_linguistic_analysis.py --compare --year 1905 --min-freq 50
+python 05_linguistic_analysis.py --compare --year 1905
 ```
