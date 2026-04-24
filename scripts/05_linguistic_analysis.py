@@ -202,7 +202,7 @@ def log_odds(freq_i, total_i, freq_j, total_j):
     return math.log(o_i) - math.log(o_j)
 
 
-def compute_log_odds_keywords(group_a_tokens, group_b_tokens, min_freq=20):
+def compute_log_odds_keywords(group_a_tokens, group_b_tokens, min_freq=50):
     freq_a  = Counter(group_a_tokens)
     freq_b  = Counter(group_b_tokens)
     total_a = len(group_a_tokens)
@@ -578,7 +578,7 @@ def parse_args():
                     help="Only include documents from this year onwards.")
 
     parser.add_argument("--top-n",      type=int,  default=50)
-    parser.add_argument("--min-freq",   type=int,  default=5)
+    parser.add_argument("--min-freq",   type=int,  default=50)
 
     parser.add_argument("--out-dir",    type=Path, default=None)
 
