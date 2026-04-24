@@ -27,7 +27,7 @@ import sys
 from pathlib import Path
 
 import numpy as np
-
+from sentence_transformers import SentenceTransformer
 
 csv.field_size_limit(sys.maxsize)
 
