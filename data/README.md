@@ -73,7 +73,7 @@ Output of `04_analyze_corpus.py`. Each run produces a timestamped subdirectory `
 
 ## data/analysis/linguistic/
 
-Output of `05_linguistics_analysis.py`. Each run produces a timestamped subdirectory `run_*/` with per-language subdirectories and, in comparative mode, a `compare/` directory.
+Output of `05_linguistic_analysis.py`. Each run produces a timestamped subdirectory `run_*/` with per-language subdirectories and, in comparative mode, a `compare/` directory.
 
 ### Per-language directories (ca/ and es/)
 
@@ -84,7 +84,7 @@ Output of `05_linguistics_analysis.py`. Each run produces a timestamped subdirec
 | `ngrams_by_decade.txt` | Top-20 bigrams per decade |
 | `ngrams_by_variant.txt` | Top-20 bigrams per dialectal variant |
 | `lexical_stats.txt` | TTR, MATTR, and hapax legomena by decade and variant |
-| `keywords_log_odds.txt` | Log-odds keyword ranking (CA vs. ES in comparative mode; earliest vs. latest decade in single-language mode) |
+| `log_odds.txt` | Log-odds keyword ranking (CA vs. ES in comparative mode; earliest vs. latest decade in single-language mode) |
 
 ### compare/ (comparative mode only)
 
