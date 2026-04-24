@@ -14,7 +14,7 @@ Llengua Catalana (CTILC), we built a five-script pipeline that (1) loads and nor
 raw texts, (2) translates them from Catalan into Spanish using Google’s Gemma3-27B-IT,
 (3) postprocesses and builds a paragraph-level bilingual corpus, (4) analyzes the distribution
 of the resulting corpus, and finally (5) performs a comparative linguistic analysis covering
-keyword extraction, n-gram frequencies, and lexical richness metrics. The resulting corpus
+log-odds extraction, n-gram frequencies, and lexical richness metrics. The resulting corpus
 contains 63 documents (1,577,899 Catalan words; 1,669,666 Spanish words; 30,032 aligned
 paragraph pairs) published between 1905 and 1948 and spans five dialectal variants of Cata-
 lan. The results shed light on the translation behavior of a large language model in literary

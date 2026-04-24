@@ -24,7 +24,7 @@ The corpus is intended as a data augmentation resource for training or fine-tuni
 
 ## Pipeline Overview
 
-The pipeline consists of six numbered scripts executed in sequence:
+The pipeline consists of five numbered scripts executed in sequence:
 
 1. **01_load_texts.py** — Parses CTILC XML files, extracts paragraphs, writes plain-text documents and `metadata.csv`.
 2. **02_translate_ca_es.py** — Translates each document paragraph by paragraph from Catalan to Spanish using Gemma-27B-IT.
