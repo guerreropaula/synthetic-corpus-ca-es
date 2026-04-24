@@ -106,7 +106,7 @@ Also cite the CTILC corpus:
 
 For detailed documentation see [data/README.md](data/README.md), [scripts/README.md](scripts/README.md), and [corpus/README.md](corpus/README.md).
 
-> The original texts remain the property of their respective authors and are distributed under the licensing terms of the CTILC corpus. The compiled dataset and code are provided for research purposes. See [LICESNE](LICENSE) for further details.
+> The original texts remain the property of their respective authors and are distributed under the licensing terms of the CTILC corpus. The compiled dataset and code are provided for research purposes. See [LICENSE](LICENSE) for further details.
 
 ### Contact
 **Contact:** [guerrerocastellopaula@gmail.com](mailto:guerrerocastellopaula@gmail.com)
