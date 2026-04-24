@@ -88,7 +88,7 @@ in both single-language  and comparative mode. Minimum frequency threshold: `--m
 - `compare/comparative_summary.txt` (comparative mode only).
 
 
-**Usage:**
+**Usage examples:**
 ```bash
 # Single-language analysis
 python scripts/05_linguistic_analysis.py --lang ca            # Catalan
