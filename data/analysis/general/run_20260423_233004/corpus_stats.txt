@@ -40,8 +40,8 @@ WORD COUNTS
 ==============================================================================
 Source                                 | Words    
 ---------------------------------------+----------
-Catalan originals  (data/raw/)         | 1,577,899
-Spanish translations (data/processed/) | 1,669,666
+Catalan originals                      | 1,577,899
+Spanish translations                   | 1,669,666
 
 ==============================================================================
 PARALLEL CORPUS STATISTICS

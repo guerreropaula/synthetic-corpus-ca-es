@@ -190,9 +190,9 @@ def compute_stats(records: list[dict]) -> dict:
     avg_paras    = total_paras / total if total else 0
     median_paras = median(n_paras) if n_paras else 0
 
-    print("Counting Catalan words (data/raw/)...")
+    print("Counting Catalan words...")
     ca_words = count_ca_words(records)
-    print("Counting Spanish words (data/processed/)...")
+    print("Counting Spanish words...")
     es_words = count_es_words(records)
 
     authors = Counter(r["author"].strip() for r in records if r.get("author"))
@@ -317,8 +317,8 @@ def write_text_report(stats: dict, out_path: Path, args: argparse.Namespace) -> 
     lines.extend(text_table(
         ["Source", "Words"],
         [
-            ["Catalan originals  (data/raw/)",         format_stat(stats["ca_words"])],
-            ["Spanish translations (data/processed/)", format_stat(stats["es_words"])],
+            ["Catalan originals",    format_stat(stats["ca_words"])],
+            ["Spanish translations", format_stat(stats["es_words"])],
         ],
     ))
     lines.append("")
