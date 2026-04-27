@@ -113,4 +113,4 @@ For detailed documentation see [data/README.md](data/README.md), [scripts/README
 
 ---
 *Project for Corpus Linguistics 2025-26*   
-*Master's in Language Analysis and Processing (UPV/EHU)*  
+*Master's Degree in Language Analysis and Processing (UPV/EHU)*  
