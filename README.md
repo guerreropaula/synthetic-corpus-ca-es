@@ -6,7 +6,7 @@ Author: **Paula Guerrero Castelló**
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)](paper/paper.pdf)
 [![Corpus](https://img.shields.io/badge/Synthetic%20Corpus-CA%2FES-blue)](corpus/corpus_ca_es.csv)
 
-This repository contains the code and methodology for creating, processing, and analyzing a synthetic parallel bilingual corpus (ca-es). The corpus comprises 3 literary documents (totaling ∼1,6 million words) published between 1905 and 1948, translated using an LLM (Gemma-3-27B-IT).
+This repository contains the code and methodology for creating, processing, and analyzing a synthetic parallel bilingual corpus (ca-es). The corpus comprises 63 literary documents (totaling ∼1,6 million words) published between 1905 and 1948, translated using an LLM (Gemma-3-27B-IT).
 
 The corpus is intended as a data augmentation resource for training or fine-tuning MT systems.
 
